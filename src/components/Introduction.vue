@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="text-white bg-black pt-32 px-64 pb-24">
-      <div class="text-3xl font-bold mb-2">A Guide to Solana City</div>
+    <div class="text-white text-md bg-black pt-64 px-64 pb-64">
+      <div class="text-3xl font-bold mb-4">A Guide to Solana City</div>
 
       <p class="max-w-md">
         If Solana were a city, what attractions should a first-timer visit? What
@@ -16,7 +16,7 @@
 
     <div
       id="phantom"
-      class="grid grid-cols-3 pt-16 bg-[#5340C1] text-white text-md"
+      class="grid grid-cols-3 pt-16 bg-[#5340C1] text-white"
     >
 
       <div class="col-start-2">
@@ -26,17 +26,16 @@
         </p>
         <p>And that is our first stop.</p>
 
-        <div class="text-3xl font-bold">Stop 1</div>
-        <p>
+        <div class="text-3xl font-bold pt-12">1 — Phantom</div>
+        <!-- <p>
           <img class="w-full my-4" src="../assets/phantom.png" alt="Untitled" />
-        </p>
+        </p> -->
         <p>
           Phantom enables you to create a Solana wallet that you will
-          necessarily need as we make our way through the day’s itinerary. They
-          are free to create.
+          necessarily need as we make our way through the day’s itinerary. Creating a wallet is free and easy.
         </p>
-        <div class="text-2xl mt-4">What is a Solana wallet?</div>
-        <p>
+        <div class="text-2xl font-semibold mt-8">What is a Solana wallet?</div>
+        <p class="mt-4">
           The Solana wallet is your access pass to the blockchain. To connect to
           any app on Solana and take an action, you will need your wallet.
         </p>
@@ -49,13 +48,12 @@
             <div class="text-md font-bold">Public Key</div>
             <ul class="list-disc ml-4">
               <li>
-                These are 53 characters long and contain a mix of letters and
-                numbers
+                These are 53 characters long and consist of a mix of letters and numbers. Examples —
                 <ul class="list-disc mb-4">
-                  <li class="ml-6">
+                  <li class=" list-none ml-6">
                     AdARShQzEsTyUVaUoBtumGfJzPFHq1JLi3WrrHH42jCU
                   </li>
-                  <li class="ml-6">
+                  <li class=" list-none ml-6">
                     rao16KsxiPQD7p12zmpX3UcE1Ua19dGjcBndXk3MhKv
                   </li>
                 </ul>
@@ -879,13 +877,13 @@ export default {
 </script>
 
 <style scoped>
-* p {
-  margin-bottom: 8px;
-  margin-top: 8px;
+p {
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
-div p {
+/* div p {
   margin-bottom: 8px;
   margin-top: 8px;
-}
+} */
 </style>
