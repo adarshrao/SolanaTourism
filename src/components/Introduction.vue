@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="text-white text-md bg-black pt-64 px-64 pb-64">
+    <div class="text-[#ebebeb] text-md bg-black pt-64 px-64 pb-64">
       <div class="text-3xl font-bold mb-4">A Guide to Solana City</div>
 
-      <p class="max-w-md">
+      <p class="max-w-md pt-4 text-[#8a8a8a]">
         If Solana were a city, what attractions should a first-timer visit? What
         should they experience to really understand what it is like to be
         resident here.
       </p>
-      <p class="my-4 pt-4 max-w-md">
+      <p class="my-4 pt-4 max-w-md text-[#8a8a8a]">
         Well, I’ve lived on Solana for the past year and this is my guide for a
         great first-time.
       </p>
@@ -16,7 +16,7 @@
 
     <div
       id="phantom"
-      class="grid grid-cols-3 pt-16 bg-[#5340C1] text-white"
+      class="grid grid-cols-3 pt-16 bg-[#111111] text-[#999999]"
     >
 
       <div class="col-start-2">
@@ -26,29 +26,30 @@
         </p>
         <p>And that is our first stop.</p>
 
-        <div class="text-3xl font-bold pt-12">1 — Phantom</div>
-        <!-- <p>
-          <img class="w-full my-4" src="../assets/phantom.png" alt="Untitled" />
-        </p> -->
+        <div class="border-b border-gray-800 pt-4 "></div>
+
+        <!-- <div class="text-3xl font-bold pt-12">1 — Phantom</div> -->
+        <p>
+          <img class="w-2/5 my-4 pt-8 pb-4" src="../assets/phantom2.png" alt="Untitled" />
+        </p>
         <p>
           Phantom enables you to create a Solana wallet that you will
           necessarily need as we make our way through the day’s itinerary. Creating a wallet is free and easy.
         </p>
-        <div class="text-2xl font-semibold mt-8">What is a Solana wallet?</div>
+        <div class="text-2xl font-semibold mt-8 text-[#ebebeb]">What is a Solana wallet?</div>
         <p class="mt-4">
           The Solana wallet is your access pass to the blockchain. To connect to
           any app on Solana and take an action, you will need your wallet.
         </p>
         <p>
-          A wallet consists of two parts — A Public key and a Private key. You
-          will need both.
+          A wallet consists of two parts — A <span class="text-white font-semibold">Public key</span> and a <span class="text-white font-semibold">Private key </span>.
         </p>
         <ul class="list-decimal ml-4">
           <li>
-            <div class="text-md font-bold">Public Key</div>
+            <div class="text-md font-bold text-white">Public Key</div>
             <ul class="list-disc ml-4">
               <li>
-                These are 53 characters long and consist of a mix of letters and numbers. Examples —
+                These are 44 characters long and consist of a mix of letters and numbers. Examples —
                 <ul class="list-disc mb-4">
                   <li class=" list-none ml-6">
                     AdARShQzEsTyUVaUoBtumGfJzPFHq1JLi3WrrHH42jCU
@@ -65,55 +66,48 @@
             </ul>
           </li>
           <li>
-            <div class="text-md font-bold mt-4">Private Key</div>
+            <div class="text-md font-bold mt-4 text-white">Private Key</div>
             <ul>
               <li class="">
-                A 12 letter mnemonic
+                A set of 12 words. Example —
                 <ul>
+                  <li class="list-disc ml-4">
+                    Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
+                    Flume Tonic
+                  </li>
                   <li class="list-disc ml-4">
                     Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
                     Flume Tonic
                   </li>
                 </ul>
               </li>
-              <li>Think of this as your password</li>
-              <li>
-                <strong
-                  >NEVER enter your private key anywhere other than the Phantom
-                  Wallet!</strong
-                >
-                You’re in a foreign country and you’re an easy target. Stay
-                safe!
-              </li>
+              <li class="my-4">Think of this as your password. It signifies that you're the owner of the above public key.</li>
             </ul>
           </li>
         </ul>
-        <div class="text-xl mt-8">
+        <div class="text-2xl mt-16 text-white font-semibold">
           Things to do here — Create your first Solana wallet
         </div>
         <p>
-          Go ahead, install Phantom and claim your free Solana wallet in order
+          Go ahead, install Phantom and claim your free Solana wallet. You will need it
           to continue on this tour.
         </p>
-        <p class="text-xl mt-2 font-bold">Steps</p>
+        <p class="text-xl mt-2 pt-4 font-bold text-white">Steps</p>
         <ul class="list-decimal ml-4">
           <li>
             Visit
-            <a href="https://phantom.app/">https://phantom.app/</a>downloads
+            <a href="https://phantom.app/downloads">https://phantom.app/downloads</a>
           </li>
           <li>Select your browser of choice</li>
           <li>Install the extension</li>
           <li>Click on the extension and follow the steps</li>
           <li>Store your 12-word-mnemonic somewhere safe!</li>
+
         </ul>
 
-        <p>
-          As you make your way through the rest of the days itinerary, you will
-          find yourself repeatedly using phantom so it’s worth the time to
-          familiarize yourself with it.
-        </p>
 
-        <div class="border-b-2 my-8"></div>
+
+        <div class="border-b border-gray-800 pt-4 my-8 "></div>
 
         <div class="grid grid-cols-2">
           <div class="div">
@@ -129,15 +123,34 @@
               >
               to a step-by-step Youtube video to help you with it.
             </p>
+
+                    <p>
+          As you make your way through the rest of this guide, you will
+          need to repeatedly using phantom so it’s worth the time to
+          familiarize yourself with it.
+        </p>
+
+                     <p>
+              <strong class="text-red-500"
+          >NEVER enter your private key anywhere other than the Phantom
+          Wallet!</strong>
+        Remember that you’re in a foreign country and you’re an easy target. Stay vigilant! More on this later.
+              </p>   
+  
+
           </div>
 
-          <div class="">Image goes here</div>
+          <div class="">
+            <p>
+          <img class="my-4 pl-4" src="../assets/emptyWallet.png" alt="Untitled" />
+          </p>
+        </div>
         </div>
 
-        <div class="border-b-2 mb-8"></div>
+        <div class="border-b border-gray-800 pt-4 my-8 "></div>
 
         <p>
-          Done? I hope you are because the rest of this tour will only be
+          Done? I hope you are because the rest of this tour can only be
           accessed with a Solana Wallet
         </p>
 
@@ -155,6 +168,9 @@
             w-auto
             place-items-center
             cursor-pointer
+            text-black
+
+            mb-32
           "
         >
           Connect
@@ -171,25 +187,24 @@
 
     <div v-if="showRemainingContent" class="subsequent">
 
-      <div
+        <div
       id="fundSol"
       class="grid grid-cols-3 pt-16 bg-gradient-to-b from-[#5340C1] to-[#E42575] text-white text-md"
+      ref="show"
     >
 
         <div class="col-start-2">
             
-            <p class="my-4">Congratulations on making it past the visa check!</p>
+            <p class="my-4">Congratulations on making it past the visa check! Welcome to Solana.</p>
 
             <p class="mb-4">
-        You’ve just gotten a taste for how you can access apps across the Solana
-        ecosystem. You don’t need to remember any usernames or password. All you
-        need to access every single app on Solana is just hitting ‘Connect’ on a
-        browser with Phantom installed.
+        You’ve just gotten a taste for how you can access any decentralised app across the Solana
+        ecosystem. No need to create and remember any usernames or password. Just have to press ‘Connect’ on a browser with Phantom installed.
       </p>
 
       <p class="mb-4">Refreshing, isn’t it?</p>
 
-      <div class="border-b-2 mb-8 mt-8"></div>
+      <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
       <div class="grid grid-cols-2">
         <div>
@@ -203,12 +218,7 @@
             inside and explore you will need Solana’s native currency called
             <strong>SOL </strong>
           </p>
-        </div>
-
-        <div>Image goes here</div>
-      </div>
-
-      <p class="mb-4">
+                <p class="mb-4">
         Taking an action on Solana usually costs 0.00005 Sol = $0.0001075
       </p>
 
@@ -217,20 +227,35 @@
         most out of today’s tour, I recommend having 0.05 SOL ~= $1
       </p>
 
+        </div>
+
+        <div>
+          <img class="my-4 pl-4" src="../assets/emptyWallet.png" alt="Untitled" />          
+        </div>
+      </div>
+
+      <div class="border-b border-slate-500 mb-12 mt-8"></div>
+
       <div class="text-2xl font-bold mt-8 mb-4">
         How to get your first 0.05 Sol
       </div>
 
+
       <p>
-        The quickest way to get 0.05 Sol to get started is to ask a friend
-        already using Solana. Tell them you're checking Solana out and share
-        your wallet address with them. If they're anything like me, they'll be
-        excited that you're checking Solana out and gladly send you 0.05 Sol.
+        Even if the amount is as low as a $1 converting a real life $ to SOL is still challenging.
+
+        I wish I could tell you that you could swipe a credit card and make it happen but it isn't as simple as that yet. Not today, maybe in a few years.
       </p>
 
-      <div class="text-md font-semibold mt-8">Other free methods</div>
+      <p>
+        The quickest way to get 0.05 Sol to get started is ..... to ask a friend
+        already using Solana. If they're anything like me, they'll be
+        excited that you're checking Solana out and gladly send 0.05 Sol to your wallet address.
+      </p>
 
-      <p>If you are the first 1000 people reading this guide —</p>
+      <div class="text-xl font-semibold mt-8">Other methods</div>
+
+      <!-- <p>If you are the first 1000 people reading this guide —</p>
       <ul class="list-decimal ml-4">
         <li>
           <strong>Tweet your Wallet Address</strong> tagging @SolanaCityGuide
@@ -246,14 +271,14 @@
             <li>Link to Discord</li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
       <p class="mb-16">
-        If none of the above options work for you, and you don’t mind spending
+        If the above option doesn't work for you, and you don’t mind spending
         money, here’s a more detailed guide on how you can fund your wallet with
         fiat (debit-card, credit card)
       </p>
 
-      <p class="italic">
+      <p class="italic text-white/[.5]">
         Funding the wallet is not strictly necessary. You can still look around.
         But if you choose not to, it’ll be the equivalent of travelling to a new
         city and never leaving the cab taking you around. The buildings are
@@ -261,36 +286,75 @@
         inside.
       </p>
 
-      <div class="border-b-2 my-8"></div>
+      <div class="border-b border-slate-500 mb-8 mt-8"></div>
 
-      <div @click="boop" class="underline text-blue-600">
-        Click here once you have funded your wallet and want to move ahead with
-        the tour
+      
+
+      <p>Once you've funded your wallet (or chosen not to), click to move on.</p>
+
+      <div @click="display('magiceden')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      ">
+        Click here to continue with the tour
       </div>
 
-      <div class="border-b-2 my-8"></div>
         </div>
 
-      </div>
+      </div>      
 
       <div
       id="magicEden"
-      class="grid grid-cols-3 pt-16 bg-[#E42575] text-white text-md"
+      v-if="showMagicEden"
+      ref="eden"
+      class="grid grid-cols-3 bg-[#111111] text-[#999999] text-md"
     >
 
       <div class="col-start-2">
 
-        <p class="pb-4">
+        <p class="pb-4 pt-12">
         With that out of the way, we can move onto the fun parts of the tour!
         Let’s go see what you can do on Solana with 0.05 Sol
       </p>
 
-      <div class="text-2xl font-bold">Stop 2 • Magic Eden</div>
+      <div class="border-b border-gray-800 mb-4 mt-4"></div>
+
+      <!-- <div class="text-2xl font-bold">Stop 2 • Magic Eden</div> -->
       <p>
-        <img class="w-full mb-8" src="../assets/magiceden.png" alt="Untitled" />
+        <img class="w-3/5 mb-8 pt-8 pb-2" src="../assets/magiceden2.png" alt="Untitled" />
       </p>
       <p>
         Magic eden is a marketplace to buy and sell NFTs.
+      </p>
+      <div class="text-xl font-semibold mt-8 text-[#ebebeb]" id="what-is-an-nft">
+        What is an NFT?
+      </div>
+      <p>
+        Most NFTs are a picture. But there's also much more to them.
+
+      </p>
+
+      <p>        
+        A non-fungible token (NFT) is a unit of data that lives on a blockchain.
+        Each NFT has a unique identification code that can’t be replicated or
+        copied and metadata that can be linked to a variety of things to provide
+        immutable proof of ownership. For example, the metadata an NFT contains
+        can be tied to digital images, songs, videos, or avatars. It can also be
+        linked to physical items, like cars and yachts, or used to give an NFT
+        owner access to exclusive merchandise, tickets to live or digital
+        events, or other exclusive perks.
+      </p>
+
+      <p>
         <a href="https://magiceden.io/marketplace/solana_monkey_business"
           >Monkeys</a
         >,
@@ -303,29 +367,19 @@
         <a href="https://magiceden.io/marketplace/galactic_geckos">geckos</a>…
         we’ve got it all.
       </p>
-      <div class="text-xl font-semibold mt-4" id="what-is-an-nft">
-        What is an NFT?
-      </div>
-      <p>
-        A non-fungible token (NFT) is a unit of data that lives on a blockchain.
-        Each NFT has a unique identification code that can’t be replicated or
-        copied and metadata that can be linked to a variety of things to provide
-        immutable proof of ownership. For example, the metadata an NFT contains
-        can be tied to digital images, songs, videos, or avatars. It can also be
-        linked to physical items, like cars and yachts, or used to give an NFT
-        owner access to exclusive merchandise, tickets to live or digital
-        events, or other exclusive perks.
-      </p>
+
       <div
-        class="text-xl font-semibold mt-8"
+        class="text-xl font-semibold mt-8 text-[#ebebeb]"
         id="things-to-do-here--buy-yourself-an-nft"
       >
         Things to do here — Buy yourself an NFT
       </div>
       <p>Look around to see if anything catches your fancy!</p>
 
-      <p><strong>Steps</strong></p>
-      <ol class="list-decimal ml-4 mb-4">
+      
+      <div class="font-semibold pb-2 text-[#ebebeb]">Steps</div>
+      <ol class="list-decimal ml-4">
+        
         <li>
           Visit Magic Eden at
           <a href="https://magiceden.io/">https://magiceden.io/</a>
@@ -336,19 +390,39 @@
         <li>Click Buy</li>
         <li>Accept the transaction that shows up</li>
       </ol>
-      <p class="italic pb-4">
+
+      <div class="border-b border-gray-800 pt-12 "></div>
+
+      <p class="italic pt-4">
         Don’t worry if the NFTs are priced higher than the available Sol in your
-        wallet. There are more places to visit and more things to do!
+        wallet. There are more places to visit and other affordable things to do!
       </p>
 
-      <div class="border-b-2 my-8"></div>
+      <!-- <div class="border-b border-gray-800 pt-4 "></div> -->
 
-      <div @click="boop" class="underline text-blue-600">
+      <!-- <div @click="boop" class="underline text-blue-600">
         Whenever you’re done with Magic Eden, click the below button to continue
         with the trip.
+      </div> -->
+
+      <div @click="display('jupiter')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      mb-16
+      ">
+        Click here to continue with the tour
       </div>
 
-      <div class="border-b-2 my-8"></div>
+      <!-- <div class="border-b-2 my-8"></div> -->
 
       </div>
       </div>
@@ -364,17 +438,22 @@
 
       <div
       id="jupiter"
+      v-if="showJupiter"
       class="grid grid-cols-3 pt-8 bg-gradient-to-b from-[#E42575] to-[#6B0F1A] text-white text-md"
     >
 
       <div class="col-start-2">
 
-        <p class="pb-4">
+        <p class="">
         Did you grab an NFT or were you confused at the why people were selling
-        and buying what are essentially images for thousands of dollars? Either
-        way it’s fine. Regular people find residents of Solana city a little odd
-        at first but eventually grow fond of them.
+        images for thousands of dollars? 
       </p>
+
+      <p>
+        It's okay. The residents of Solana city can seem a little odd
+        at times but you'll eventually grow fond of us.
+      </p>
+
       <p>
         Next stop, lets hit up the local Currency Exchange market and understand
         a little more about what other currencies exist on Solana.
@@ -442,12 +521,26 @@
         <li>Enter the amount you want to swap</li>
         <li>Click Swap</li>
       </ol>
-      <p>Congratulations! You’ve done a swap and it just cost you 0.000001$!</p>
+      <!-- <p>Congratulations! You’ve done a swap and it just cost you 0.000001$!</p> -->
 
       <div class="border-b-2 my-8"></div>
 
-      <div @click="boop" class="underline text-blue-600">
-        Click here once you're done with Jupiter and want to move on
+      Click below once you've done a swap on Jupiter and want to move on      
+
+      <div @click="display('marinade')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      ">
+        Click here to continue with the tour
       </div>
 
       <div class="border-b-2 my-8"></div>
@@ -457,6 +550,7 @@
 
         <div
       id="safety"
+      v-if="showMarinade"
       class="grid grid-cols-3 pt-16 bg-black text-white text-md"
     >
 
@@ -498,6 +592,7 @@
 
     <div
       id="marinade"
+      v-if="showMarinade"
       class="grid grid-cols-3 pt-16 bg-gradient-to-b from-[#318D89] via-[#318D89] to-[#318D89]  text-white text-md"
     >
 
@@ -585,13 +680,26 @@
         <li>Approve Transaction</li>
       </ol>
       <p>
-        Thank you for staking with Marinade and making the network safer for
-        everyone!
+        
       </p>
 
       <div class="border-b-2 my-8"></div>
 
-      <div @click="boop" class="underline text-blue-600">
+      Click below once you're done staking with Marinade to continue with the tour
+
+      <div @click="display('solend')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      ">
         Click here to continue with the tour
       </div>
 
@@ -601,6 +709,7 @@
               
     <div
       id="Solend"
+      v-if="showSolend"
       class="grid grid-cols-3 pt-16 bg-gradient-to-b from-[#318D89] via-[#1A202C] to-[#1A202C] text-white text-md"
     >
 
@@ -614,7 +723,7 @@
       </p>
       <p>
         Solend is Solana’s premier banking destination. It takes deposits from
-        some users and lends a port of them out to others. The borrowers pay
+        some users and lends a portion of them out to others. The borrowers pay
         interest which goes to all the depositors.
       </p>
       <div
@@ -671,7 +780,19 @@
 
       <div class="border-b-2 my-8"></div>
 
-      <div @click="boop" class="underline text-blue-600">
+      <div @click="display('frakt')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      ">
         Click here to continue with the tour
       </div>
 
@@ -681,6 +802,7 @@
 
     <div
       id="frakt"
+      v-if="showFrakt"
       class="grid grid-cols-3 pt-16 bg-[#C02425] text-white text-md"
     >
 
@@ -753,7 +875,19 @@
 
       <div class="border-b-2 my-8"></div>
 
-      <div @click="boop" class="underline text-blue-600">
+      <div @click="display('degen')" 
+      class="
+      my-8
+      h-16
+      grid
+      font-bold
+      rounded-lg
+      bg-slate-100
+      w-auto
+      place-items-center
+      cursor-pointer
+      text-black
+      ">
         Click here to go the final stop
       </div>
 
@@ -766,6 +900,7 @@
 
     <div
       id="degencoinflip"
+      v-if="showDegen"
       class="grid grid-cols-3 pt-16 bg-gradient-to-b from-[#C02425] to-black text-white text-md"
     >
 
@@ -822,6 +957,7 @@
 
     <div
       id="ending"
+      v-if="showDegen"
       class="grid grid-cols-3 pt-16 bg-black text-white text-md"
     >
 
@@ -864,14 +1000,62 @@ export default {
   data() {
     return {
       showRemainingContent: true,
+      showMagicEden: false,
+      showJupiter: false,
+      showMarinade: false,
+      showSolend: false,
+      showFrakt: false,
+      showDegen: false
+
     };
   },
   computed: {},
   methods: {
-    boop() {
+    async boop() {
       // console.log("boop")
       this.showRemainingContent = !this.showRemainingContent;
+      await setTimeout(() => {
+        this.$refs['show'].scrollIntoView({behavior: "smooth"})
+      }, 
+      500)
+      
     },
+    display(string) {
+
+      switch(string) {
+
+        case "magiceden":
+          this.showMagicEden = !this.showMagicEden;
+          setTimeout(() => {
+            console.log("This is running")
+        this.$refs['eden'].scrollIntoView({behavior: "smooth"})
+      }, 
+      500)
+          break;
+        case "jupiter":
+          this.showJupiter = !this.showJupiter;
+          break;
+        case "marinade":
+          this.showMarinade = !this.showMarinade;
+          break;
+        case "solend":
+          this.showSolend = !this.showSolend;
+          break;
+        case "frakt":
+          this.showFrakt = !this.showFrakt;
+          break;
+        case "degen":
+          this.showDegen = !this.showDegen;
+          break;
+          
+
+      }
+
+      // if (string == "magiceden") {} else if (string == "jupiter") {}
+
+    }
+
+
   },
 };
 </script>
@@ -881,6 +1065,31 @@ p {
   margin-bottom: 16px;
   margin-top: 16px;
 }
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+/* .slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+} */
 
 /* div p {
   margin-bottom: 8px;
