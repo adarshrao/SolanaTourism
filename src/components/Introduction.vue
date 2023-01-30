@@ -1,52 +1,62 @@
 <template>
-  <div>
-    <div class="text-[#ebebeb] text-md bg-black grid grid-cols-3">
-      
-
-      <div class="flex flex-row space-center col-start-2">
+  <div class="break-words">
+    <div
+      class="
+        text-[#ebebeb] text-md
+        bg-black
+        grid
+        grid-cols-[1fr_minmax(240px,300px)_1fr]
+        pt-12
+        sm:grid-cols-[1fr_800px_1fr]
+        sm:pt-64
+        sm:py-48
+        sm:pr-32
+      "
+    >
+      <div class="flex flex-col pb-16 sm:flex-row sm:space-center col-start-2">
         <img
-                class="my-4 pl-4"
-                src="../assets/SolanaLogo.png"
-                alt="Untitled"
-              />
+          class=" scale-75 w-100% sm:h-[250px]"
+          src="../assets/SolanaLogo.png"
+          alt="Untitled"
+        />
 
-      <div class="">
+        <div class="">
+          <div class="text-3xl font-bold mb-4">A Guide to Solana City</div>
 
-      <div class="text-3xl font-bold mb-4">A Guide to Solana City</div>
+          <p class="max-w-md pt-4 text-[#8a8a8a]">
+            If <a href="https://solana.com">Solana</a> were a city, what
+            attractions should a first-timer visit? What should they experience
+            to really understand what it is like to be a resident here.
+          </p>
+          <p class="my-4 pt-4 max-w-md text-[#8a8a8a]">
+            Well, here's a guide for a great first time from someone who has
+            lived on Solana for the past year.
+          </p>
 
-      <p class="max-w-md pt-4 text-[#8a8a8a]">
-        If Solana were a city, what attractions should a first-timer visit? What
-        should they experience to really understand what it is like to be
-        resident here.
-      </p>
-      <p class="my-4 pt-4 max-w-md text-[#8a8a8a]">
-        Well, I’ve lived on Solana for the past year and this is my guide for a
-        great first-time.
-      </p>
-
+          <p class="my-4 pt-4 max-w-md text-[#8a8a8a]">
+            by <a clas="!text-[#8a8a8a]" target="_blank" href="https://twitter.com/adarshrao_">@adarshrao_</a>
+            
+          </p>
+        </div>
+      </div>
     </div>
-
-
-      </div>
-
-      </div>
 
 
     <div
       id="phantom"
       class="
         grid
-        grid-cols-[1fr_380px_1fr]
+        grid-cols-[1fr_minmax(260px,380px)_1fr]
         px-8
         pt-4
-        sm:grid-cols-[1fr_600px_1fr]
-        sm:pt-16 sm:px-16 text-lg
+        sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+        text-lg
         lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
         bg-[#111111]
         text-[#999999]
       "
     >
-      <div class="col-start-2 w-full">
+      <div class="col-start-2">
         <p class="mt-8">To access the internet, you use a web browser</p>
         <p class="mt-2">
           To access the Solana blockchain, you will need a Solana wallet
@@ -58,25 +68,25 @@
         <!-- <div class="text-3xl font-bold pt-12">1 — Phantom</div> -->
         <p>
           <img
-            class="w-2/5 my-4 pt-8 pb-4"
+            class=" w-3/4 sm:w-2/5 my-4 pt-8 pb-4"
             src="../assets/phantom2.png"
             alt="Untitled"
           />
         </p>
         <p>
-          Phantom enables you to create a Solana wallet that you will
-          necessarily need as we make our way through the day’s itinerary.
-          Creating a wallet is free and easy.
+          Phantom lets you to create a Solana wallet that you will need as we
+          make our way through the day’s itinerary. Creating a wallet is free
+          and easy.
         </p>
-        <div class="text-2xl font-semibold mt-8 text-[#ebebeb]">
-          What is a Solana wallet?
+        <div class="text-2xl font-semibold mt-12 text-[#ebebeb]">
+          What is a wallet?
         </div>
-        <p class="mt-4">
-          The Solana wallet is your access pass to the blockchain. To connect to
-          any app on Solana and take an action, you will need your wallet.
+        <p class="!mt-2">
+          The wallet is your access pass to the blockchain. To connect to
+          any app on Solana and take an action, you will need a compatible wallet.
         </p>
         <p>
-          A wallet consists of two parts — A
+          Every wallet consists of two parts — A
           <span class="text-white font-semibold">Public key</span> and a
           <span class="text-white font-semibold">Private key </span>.
         </p>
@@ -89,10 +99,10 @@
                 numbers. Examples —
                 <ul class="list-disc mb-4">
                   <li class="list-none ml-6">
-                    AdARShQzEsTyUVaUoBtumGfJzPFHq1JLi3WrrHH42jCU
+                    HGdKP7AE47NWePzoZp4xjKCdhZS7VtAwBm78h3i7CTVc
                   </li>
                   <li class="list-none ml-6">
-                    rao16KsxiPQD7p12zmpX3UcE1Ua19dGjcBndXk3MhKv
+                    9jpuPgge8TyoAS66gf58F8St24SB1j2fFc1ag7HRhbox
                   </li>
                 </ul>
               </li>
@@ -112,10 +122,6 @@
                     Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
                     Flume Tonic
                   </li>
-                  <li class="list-disc ml-4">
-                    Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
-                    Flume Tonic
-                  </li>
                 </ul>
               </li>
               <li class="my-4">
@@ -128,10 +134,7 @@
         <div class="text-2xl mt-16 text-white font-semibold">
           Things to do here — Create your first Solana wallet
         </div>
-        <p>
-          Go ahead, install Phantom and claim your free Solana wallet. You will
-          need it to continue on this tour.
-        </p>
+        <p>Go ahead, install Phantom and claim your free Solana wallet.</p>
         <p class="text-xl mt-2 pt-4 font-bold text-white">Steps</p>
         <ul class="list-decimal ml-4">
           <li>
@@ -151,8 +154,9 @@
         <div class="grid grid-cols-2">
           <div class="div">
             <p>
-              At the end you should have a chrome extension installed clicking
-              which should show up this.
+              At the end you should have a
+              <span class="text-white">browser extension</span> installed upon
+              clicking which the following would show.
             </p>
 
             <p class="my-8">
@@ -160,14 +164,14 @@
               <a href="https://www.youtube.com/watch?v=yqW4X0wQ9DA"
                 >here’s a link</a
               >
-              to a step-by-step Youtube video to help you with it.
+              to a step-by-step Youtube video to help you through it.
             </p>
 
-            <p>
+            <!-- <p>
               As you make your way through the rest of this guide, you will need
               to repeatedly using phantom so it’s worth the time to familiarize
               yourself with it.
-            </p>
+            </p> -->
 
             <p>
               <strong class="text-red-500"
@@ -197,7 +201,9 @@
           accessed with a Solana Wallet
         </p>
 
-        <p class="">Select your wallet below and click Connect to enter Solana City.</p>
+        <p class="">
+          Select your wallet below and click Connect to enter Solana City.
+        </p>
 
         <!-- <div
           @click="boop"
@@ -220,8 +226,7 @@
 
         <div class="my-8 pb-16" @click="boop">
           <wallet-multi-button></wallet-multi-button>
-        </div>     
-
+        </div>
       </div>
     </div>
 
@@ -236,7 +241,13 @@
       <div
         id="fundSol"
         class="
-          grid grid-cols-3
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
           pt-16
           bg-gradient-to-b
           from-[#5340C1]
@@ -252,9 +263,10 @@
 
           <p class="mb-4">
             You’ve just gotten a taste for how you can access any decentralised
-            app across the Solana ecosystem. No need to create and remember any
-            usernames or passwords. Just have to press ‘Connect’ on a browser
-            with Phantom installed.
+            app across the Solana ecosystem. No need to create and remember
+            usernames or passwords. Just press
+            <span class="font-bold text-white">Connect</span> on a browser with
+            Phantom wallet installed.
           </p>
 
           <p class="mb-4">Refreshing, isn’t it?</p>
@@ -278,12 +290,6 @@
                 Taking an action on Solana usually costs 0.00005 Sol =
                 $0.0001075
               </p>
-
-              <p class="mb-4">
-                So you will need a minimum of $0.0001075 for todays trip but to
-                get the most out of today’s tour, I recommend having 0.05 SOL ~=
-                $1
-              </p>
             </div>
 
             <div>
@@ -297,12 +303,20 @@
 
           <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
+          <p class="mb-4">
+            To get the most out of today’s tour, I recommend having 0.05 SOL ~=
+            $1
+          </p>
+
           <div class="text-2xl font-bold mt-8 mb-4">
             How to get your first 0.05 Sol
           </div>
 
           <p>
-            Converting a real life $ to SOL is unfortunately still a challenge. I wish I could tell you that you could swipe a credit card you're in and get a wallet that's funded with money. You can, but nothing I would recommend to a newcomer.
+            Converting a real life $ to SOL is unfortunately still a challenge.
+            I wish I could tell you that you could swipe a credit card you're in
+            and get a wallet that's funded with money. You can, but nothing I
+            would recommend to a newcomer.
           </p>
 
           <p>
@@ -313,9 +327,12 @@
           </p>
 
           <p>
-            Don't have such a friend? Let me be your friend :) Tweet/DM me at @adarshrao_ with your wallet address and if your Twitter seems like it belongs to a real human, I'll be happy to send SOL to get you started. Offer only valid for the first 20 people that hit me up!
+            Don't know anybody like that? Let me be your friend :) Tweet/DM me
+            at @adarshrao_ with your wallet address and if your Twitter seems
+            like it belongs to a real human, I'll be happy to send SOL to get
+            you started. Offer only valid for the first 20 people that hit me
+            up!
           </p>
-
 
           <div class="text-xl font-semibold mt-8">Don't mind spending $?</div>
 
@@ -337,28 +354,27 @@
         </li>
       </ul> -->
           <p class="mb-16">
-            If the above option doesn't work for you, you have a couple of other options.
-
-
+            If the above option doesn't work for you, you have a couple of other
+            options.
           </p>
 
           <p>
-
-            Purchase through Phantom (mininum $50). <a href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option.">Here's a link to a guide.</a>
-
+            Purchase through Phantom (mininum $50).
+            <a
+              href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option."
+              >Here's a link to a guide.</a
+            >
           </p>
 
           <p>
-
-            Create an account on an exchange like Coinbase, Kraken and Binance, purchase SOL with a credit card there and send it from there to your wallet. <a href="https://medium.com/@defidecrypted/how-to-transfer-funds-to-solana-for-the-first-time-86ec5717630b">Guide to buying from Coinbase</a>
-
+            Create an account on an exchange like Coinbase, Kraken and Binance,
+            purchase SOL with a credit card there and send it from there to your
+            wallet.
+            <a
+              href="https://medium.com/@defidecrypted/how-to-transfer-funds-to-solana-for-the-first-time-86ec5717630b"
+              >Guide to buying from Coinbase</a
+            >
           </p>
-
-
-
-
-
-
 
           <p class="italic text-white/[.5]">
             Funding the wallet is not strictly necessary. You can still look
@@ -371,7 +387,8 @@
           <div class="border-b border-slate-500 mb-8 mt-8"></div>
 
           <p>
-            Once you've funded your wallet (or chosen not to), click below to move on.
+            Once you've funded your wallet (or chosen not to), click below to
+            move on.
           </p>
 
           <div
@@ -398,12 +415,21 @@
         id="magicEden"
         v-if="showMagicEden"
         ref="eden"
-        class="grid grid-cols-3 bg-[#111111] text-[#999999] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#111111]
+          text-[#999999] text-md
+        "
       >
         <div class="col-start-2">
           <p class="pb-4 pt-12">
-            With some SOL in our wallet, let’s go see what you can do with it on
-            Solana.
+            With some SOL in our wallet, let’s go see what you can do on Solana.
           </p>
 
           <div class="border-b border-gray-800 mb-4 mt-4"></div>
@@ -511,25 +537,19 @@
         </div>
       </div>
 
-      <!-- <div
-      id="phantom"
-      class="grid grid-cols-3 bg-gradient-to-b from-[#E42575] to-[#E42575] text-white text-md"
-    >
-
-      <div class="col-start-2">
-      </div>
-    </div> -->
-
       <div
         id="jupiter"
         v-if="showJupiter"
         ref="jupiter"
         class="
-          grid grid-cols-3
-          pt-8
-          bg-[#6B0F1A] bg-gradient-to-b
-          from-[#E42575]
-          to-[]
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#6B0F1A]
           text-[#BCBCBC] text-md
         "
       >
@@ -658,7 +678,18 @@
         id="safety"
         v-if="showMarinade"
         ref="marinade"
-        class="grid grid-cols-3 pt-16 bg-black text-[#8a8a8a] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          pt-16
+          bg-black
+          text-[#8a8a8a] text-md
+        "
       >
         <div class="col-start-2">
           <div
@@ -693,7 +724,7 @@
             please educate yourself on how to stay safe.
           </p>
           <p class="text-[#ebebeb]">
-            It <strong>is</strong> possible to stay safe, it just takes effort.
+            It <strong>is</strong> possible to stay safe here, it just takes vigilance.
           </p>
 
           <p class="py-8">
@@ -705,7 +736,17 @@
       <div
         id="marinade"
         v-if="showMarinade"
-        class="grid grid-cols-3 pt-16 bg-[#E9FAF5] text-[#333333] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#E9FAF5]
+          text-[#333333] text-md
+        "
       >
         <div class="col-start-2">
           <p class="pb-4">
@@ -835,7 +876,17 @@
         id="Solend"
         v-if="showSolend"
         ref="solend"
-        class="grid grid-cols-3 pt-16 bg-[#111111] text-[#8a8a8a] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#111111]
+          text-[#8a8a8a] text-md
+        "
       >
         <div class="col-start-2">
           <p>Next up, a bank.</p>
@@ -936,7 +987,17 @@
         id="frakt"
         ref="frakt"
         v-if="showFrakt"
-        class="grid grid-cols-3 pt-16 bg-[#E9FAF5] text-[#33333] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#E9FAF5]
+          text-[#33333] text-md
+        "
       >
         <!-- bg-gradient-to-b from-[#FD5C28] to-[#F0CB35] -->
 
@@ -1047,7 +1108,17 @@
         id="degencoinflip"
         ref="degen"
         v-if="showDegen"
-        class="grid grid-cols-3 pt-16 bg-[#111111] text-[#8a8a8a] text-md"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-[#111111]
+          text-[#8a8a8a] text-md
+        "
       >
         <div class="col-start-2">
           <p>
@@ -1095,7 +1166,18 @@
       <div
         id="ending"
         v-if="showDegen"
-        class="grid grid-cols-3 pt-16 bg-black text-white text-md pb-48"
+        class="
+          grid
+          grid-cols-[1fr_minmax(260px,380px)_1fr]
+          px-8
+          pt-4
+          sm:grid-cols-[1fr_600px_1fr] sm:pt-16 sm:px-16
+          text-lg
+          lg:grid-cols-[1fr_minmax(600px,1fr)_1fr]
+          bg-black
+          text-white text-md
+          pb-48
+        "
       >
         <div class="col-start-2">
           <p>And with that we’ve come to the end of the tour.</p>
@@ -1104,8 +1186,8 @@
             first day in Solana city.
           </p>
           <p>
-            If you enjoyed being shown around, I would appreciate a Twitter
-            shout-out at @SolanaTourism
+            If you enjoyed being shown around, I would appreciate a 
+            shout-out at <a href="https://twitter.com/adarshrao_">@adarshrao_</a> 
           </p>
           <!-- <p class="underline text-blue-500">Click here to Tweet</p> -->
 
@@ -1136,38 +1218,40 @@
 </template>
 
 <script>
-import 'solana-wallets-vue/styles.css'
+import "solana-wallets-vue/styles.css";
 
-import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
-import { initWallet, useWallet } from 'solana-wallets-vue'
-import { WalletMultiButton } from 'solana-wallets-vue'
+import {
+  PhantomWalletAdapter,
+  SolflareWalletAdapter,
+} from "@solana/wallet-adapter-wallets";
+import { initWallet, useWallet } from "solana-wallets-vue";
+import { WalletMultiButton } from "solana-wallets-vue";
 
-const wallets = [
-    new PhantomWalletAdapter()
-]
+const wallets = [new PhantomWalletAdapter()];
 
-initWallet({ wallets, autoConnect: false })
+initWallet({ wallets, autoConnect: false });
 
-const data = useWallet()
+const data = useWallet();
 
-const { connected } = useWallet()
+const { connected } = useWallet();
 
 export default {
   name: "App",
   data() {
     return {
-      showRemainingContent: connected,
+      // showRemainingContent: connected,
+      showRemainingContent: true,
       showMagicEden: true,
       showJupiter: true,
       showMarinade: true,
       showSolend: true,
       showFrakt: true,
       showDegen: true,
-      connected
+      connected,
     };
   },
   components: {
-    WalletMultiButton
+    WalletMultiButton,
   },
   computed: {},
   methods: {
