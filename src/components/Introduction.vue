@@ -1239,14 +1239,14 @@ export default {
   name: "App",
   data() {
     return {
-      // showRemainingContent: connected,
-      showRemainingContent: true,
-      showMagicEden: true,
-      showJupiter: true,
-      showMarinade: true,
-      showSolend: true,
-      showFrakt: true,
-      showDegen: true,
+      showRemainingContent: connected,
+      // showRemainingContent: true,
+      showMagicEden: false,
+      showJupiter: false,
+      showMarinade: false,
+      showSolend: false,
+      showFrakt: false,
+      showDegen: false,
       connected,
     };
   },
