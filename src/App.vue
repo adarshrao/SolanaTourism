@@ -2,7 +2,6 @@
 import {marked} from 'marked'
 import Introduction from './components/Introduction.vue'
 
-
 export default {
   name: 'App',
  data() {

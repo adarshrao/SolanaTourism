@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solana/wallet-adapter-wallets": "^0.19.11",
     "marked": "^4.2.12",
+    "solana-wallets-vue": "^0.5.2",
     "vue": "^3.2.45"
   },
   "devDependencies": {

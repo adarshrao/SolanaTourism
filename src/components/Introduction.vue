@@ -1,6 +1,17 @@
 <template>
   <div>
-    <div class="text-[#ebebeb] text-md bg-black pt-64 px-64 pb-64">
+    <div class="text-[#ebebeb] text-md bg-black grid grid-cols-3">
+      
+
+      <div class="flex flex-row space-center col-start-2">
+        <img
+                class="my-4 pl-4"
+                src="../assets/SolanaLogo.png"
+                alt="Untitled"
+              />
+
+      <div class="">
+
       <div class="text-3xl font-bold mb-4">A Guide to Solana City</div>
 
       <p class="max-w-md pt-4 text-[#8a8a8a]">
@@ -12,7 +23,14 @@
         Well, I’ve lived on Solana for the past year and this is my guide for a
         great first-time.
       </p>
+
     </div>
+
+
+      </div>
+
+      </div>
+
 
     <div
       id="phantom"
@@ -179,9 +197,9 @@
           accessed with a Solana Wallet
         </p>
 
-        <p class="">Click Connect below to enter Solana City.</p>
+        <p class="">Select your wallet below and click Connect to enter Solana City.</p>
 
-        <div
+        <!-- <div
           @click="boop"
           class="
             my-8
@@ -198,7 +216,12 @@
           "
         >
           Connect
-        </div>
+        </div> -->
+
+        <div class="my-8 pb-16" @click="boop">
+          <wallet-multi-button></wallet-multi-button>
+        </div>     
+
       </div>
     </div>
 
@@ -230,7 +253,7 @@
           <p class="mb-4">
             You’ve just gotten a taste for how you can access any decentralised
             app across the Solana ecosystem. No need to create and remember any
-            usernames or password. Just have to press ‘Connect’ on a browser
+            usernames or passwords. Just have to press ‘Connect’ on a browser
             with Phantom installed.
           </p>
 
@@ -279,10 +302,7 @@
           </div>
 
           <p>
-            Even if the amount is as low as a $1 converting a real life $ to SOL
-            is still challenging. I wish I could tell you that you could swipe a
-            credit card and make it happen but it isn't as simple as that yet.
-            Not today, maybe in a few years.
+            Converting a real life $ to SOL is unfortunately still a challenge. I wish I could tell you that you could swipe a credit card you're in and get a wallet that's funded with money. You can, but nothing I would recommend to a newcomer.
           </p>
 
           <p>
@@ -292,7 +312,12 @@
             your wallet address.
           </p>
 
-          <div class="text-xl font-semibold mt-8">Other methods</div>
+          <p>
+            Don't have such a friend? Let me be your friend :) Tweet/DM me at @adarshrao_ with your wallet address and if your Twitter seems like it belongs to a real human, I'll be happy to send SOL to get you started. Offer only valid for the first 20 people that hit me up!
+          </p>
+
+
+          <div class="text-xl font-semibold mt-8">Don't mind spending $?</div>
 
           <!-- <p>If you are the first 1000 people reading this guide —</p>
       <ul class="list-decimal ml-4">
@@ -312,10 +337,28 @@
         </li>
       </ul> -->
           <p class="mb-16">
-            If the above option doesn't work for you, and you don’t mind
-            spending money, here’s a more detailed guide on how you can fund
-            your wallet with fiat (debit-card, credit card)
+            If the above option doesn't work for you, you have a couple of other options.
+
+
           </p>
+
+          <p>
+
+            Purchase through Phantom (mininum $50). <a href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option.">Here's a link to a guide.</a>
+
+          </p>
+
+          <p>
+
+            Create an account on an exchange like Coinbase, Kraken and Binance, purchase SOL with a credit card there and send it from there to your wallet. <a href="https://medium.com/@defidecrypted/how-to-transfer-funds-to-solana-for-the-first-time-86ec5717630b">Guide to buying from Coinbase</a>
+
+          </p>
+
+
+
+
+
+
 
           <p class="italic text-white/[.5]">
             Funding the wallet is not strictly necessary. You can still look
@@ -328,7 +371,7 @@
           <div class="border-b border-slate-500 mb-8 mt-8"></div>
 
           <p>
-            Once you've funded your wallet (or chosen not to), click to move on.
+            Once you've funded your wallet (or chosen not to), click below to move on.
           </p>
 
           <div
@@ -337,16 +380,16 @@
               my-8
               h-16
               grid
-              font-bold
+              font-semibold
               rounded-lg
-              bg-slate-100
+              bg-white/20
               w-auto
               place-items-center
               cursor-pointer
-              text-black
+              text-whiteC
             "
           >
-            Click here to continue with the tour
+            Continue with the tour
           </div>
         </div>
       </div>
@@ -450,17 +493,18 @@
               my-8
               h-16
               grid
-              font-bold
+              font-semibold
               rounded-lg
-              bg-slate-100
+              bg-white/20
               w-auto
               place-items-center
               cursor-pointer
-              text-black
+              text-white
               mb-16
+              hover:bg-white/30
             "
           >
-            Click here to continue with the tour
+            Continue with the tour
           </div>
 
           <!-- <div class="border-b-2 my-8"></div> -->
@@ -593,13 +637,14 @@
               my-8
               h-16
               grid
-              font-bold
+              font-semibold
               rounded-lg
-              bg-slate-100
+              bg-white/20
               w-auto
               place-items-center
               cursor-pointer
-              text-black
+              text-white
+              hover:bg-white/30
             "
           >
             Click here to continue with the tour
@@ -770,12 +815,13 @@
               grid
               font-semibold
               rounded-lg
-              bg-gray-900
+              bg-black/80
               w-auto
               place-items-center
               cursor-pointer
               text-[#ebebeb]
               mb-16
+              hover:bg-black/90
             "
           >
             Click here to continue with the tour
@@ -868,13 +914,14 @@
               my-8
               h-16
               grid
-              font-bold
+              font-semibold
               rounded-lg
-              bg-slate-100
+              bg-white/20
               w-auto
               place-items-center
               cursor-pointer
-              text-black
+              text-white
+              hover:bg-white/30
               mb-16
             "
           >
@@ -981,14 +1028,15 @@
               grid
               font-semibold
               rounded-lg
-              bg-gray-800
+              bg-gray-800/80
               w-auto
               place-items-center
               cursor-pointer
               text-white
+              hover:bg-gray-800/90
             "
           >
-            Click here to go the final stop
+            Continue to the final stop!
           </div>
 
           <!-- <div class="border-b-2 my-8"></div> -->
@@ -1020,14 +1068,16 @@
             up some money, you either win double or you lose it all. Odds are
             exactly 50/50 with a 3.5% fee on your winnings.
           </p>
+
+          <div class="text-2xl text-white font-semibold mt-8">
+            Things to do here — Try your luck
+          </div>
+
           <p>
             Mathematically, sure you’re always at a disadvantage because but try
             it out! Vacation money is meant to be spent afterall.
           </p>
-          <div class="text-2xl text-white font-semibold mt-8">
-            Things to do here — Try your luck
-          </div>
-          <p>Have some SOL left over in your wallet? Go all in!</p>
+
           <p class="text-lg font-semibold pt-2 text-white">Steps</p>
           <ol class="list-decimal ml-4 pb-32">
             <li>Go to degencoinflip.com</li>
@@ -1086,26 +1136,44 @@
 </template>
 
 <script>
-import { marked } from "marked";
+import 'solana-wallets-vue/styles.css'
+
+import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
+import { initWallet, useWallet } from 'solana-wallets-vue'
+import { WalletMultiButton } from 'solana-wallets-vue'
+
+const wallets = [
+    new PhantomWalletAdapter()
+]
+
+initWallet({ wallets, autoConnect: false })
+
+const data = useWallet()
+
+const { connected } = useWallet()
 
 export default {
   name: "App",
   data() {
     return {
-      showRemainingContent: true,
+      showRemainingContent: connected,
       showMagicEden: true,
       showJupiter: true,
       showMarinade: true,
       showSolend: true,
       showFrakt: true,
       showDegen: true,
+      connected
     };
+  },
+  components: {
+    WalletMultiButton
   },
   computed: {},
   methods: {
     async boop() {
       // console.log("boop")
-      this.showRemainingContent = !this.showRemainingContent;
+      // this.showRemainingContent = !this.showRemainingContent;
       await setTimeout(() => {
         this.$refs["show"].scrollIntoView({ behavior: "smooth" });
       }, 500);
