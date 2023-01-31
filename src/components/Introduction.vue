@@ -75,15 +75,14 @@
         </p>
         <p>
           Phantom lets you to create a Solana wallet that you will need as we
-          make our way through the day’s itinerary. Creating a wallet is free
-          and easy.
+          make our way through the day’s itinerary. Creating a wallet is free, easy and only takes a few minutes.
         </p>
         <div class="text-2xl font-semibold mt-12 text-[#ebebeb]">
           What is a wallet?
         </div>
         <p class="!mt-2">
           The wallet is your access pass to the blockchain. To connect to
-          any app on Solana and take an action, you will need a compatible wallet.
+          any app on Solana and take an action, you will need to connect with a compatible wallet.
         </p>
         <p>
           Every wallet consists of two parts — A
@@ -107,7 +106,7 @@
                 </ul>
               </li>
               <li>
-                Think of this as your username. You can share this with other
+                Think of this as your username, your identity. You can share this with other
                 people.
               </li>
             </ul>
@@ -178,8 +177,8 @@
                 >NEVER enter your private key anywhere other than the Phantom
                 Wallet!</strong
               >
-              Remember that you’re in a foreign country and you’re an easy
-              target. Stay vigilant! More on this later.
+              Remember that you’re in an unfamiliar country and you’re an easy
+              target for con artists. More on this later.
             </p>
           </div>
 
@@ -262,7 +261,7 @@
           </p>
 
           <p class="mb-4">
-            You’ve just gotten a taste for how you can access any decentralised
+            You’ve just gotten a taste for how you can access any decentralized
             app across the Solana ecosystem. No need to create and remember
             usernames or passwords. Just press
             <span class="font-bold text-white">Connect</span> on a browser with
@@ -282,13 +281,13 @@
                 yet.
               </p>
               <p class="mb-4">
-                While visiting all of todays attractions is free, to actually go
+                While visiting all of todays attractions is free, in order to actually go
                 inside and explore you will need Solana’s native currency called
                 <strong>SOL </strong>
               </p>
               <p class="mb-4">
-                Taking an action on Solana usually costs 0.00005 Sol =
-                $0.0001075
+                Taking an action on Solana usually costs a minimum of 0.00005 Sol =
+                $0.0001075. Basically nothing.
               </p>
             </div>
 
@@ -314,9 +313,6 @@
 
           <p>
             Converting a real life $ to SOL is unfortunately still a challenge.
-            I wish I could tell you that you could swipe a credit card you're in
-            and get a wallet that's funded with money. You can, but nothing I
-            would recommend to a newcomer.
           </p>
 
           <p>
@@ -326,15 +322,13 @@
             your wallet address.
           </p>
 
-          <p>
+          <p class="italic text-white/60 pb-4">
             Don't know anybody like that? Let me be your friend :) Tweet/DM me
-            at @adarshrao_ with your wallet address and if your Twitter seems
-            like it belongs to a real human, I'll be happy to send SOL to get
-            you started. Offer only valid for the first 20 people that hit me
-            up!
+            at <a class="text-white/60" href="https://twitter.com/adarshrao_"> @adarshrao_ </a> with your wallet address and I'll be happy to send SOL to get
+            you started.
           </p>
 
-          <div class="text-xl font-semibold mt-8">Don't mind spending $?</div>
+          <div class="text-2xl font-semibold mt-8">Don't mind spending $?</div>
 
           <!-- <p>If you are the first 1000 people reading this guide —</p>
       <ul class="list-decimal ml-4">
@@ -354,12 +348,12 @@
         </li>
       </ul> -->
           <p class="mb-16">
-            If the above option doesn't work for you, you have a couple of other
+            If neither of the above options work for you, fret not because you still have a couple of other
             options.
           </p>
 
           <p>
-            Purchase through Phantom (mininum $50).
+            Purchase through Phantom with a credit card (mininum $50).
             <a
               href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option."
               >Here's a link to a guide.</a
@@ -601,21 +595,22 @@
             For example, your wallet could also contain:
 
             <span
-              >USDC, USDT — Stablecoins pegged to the value of the US
+              > <span class="text-white font-semibold"> USDC, USDT </span> — Stablecoins pegged to the value of the US
               Dollar</span
             >
 
             <span
-              >MNDE, LFNTY, ORCA — Tokens belonging to teams and projects on
+              >
+              <span class="text-white font-semibold"> MNDE, LFNTY, ORCA </span>— Tokens belonging to teams and projects on
               Solana
             </span>
 
             <span
-              >mSOL, SOL — Staked version of Sol (will explain this later
+              ><span class="text-white font-semibold"> mSOL, SOL </span> — Staked version of Sol (will explain this later
               on)</span
             >
 
-            <span>Bonk — Meme tokens</span>
+            <span> <span class="text-white font-semibold"> Bonk </span>— Meme tokens</span>
           </div>
 
           <p>
@@ -635,7 +630,7 @@
             a trade that it will let you do.
           </p>
           <div class="text-xl font-semibold mt-8 mb-2 text-[#ebebeb]">
-            Steps to do so
+            Steps
           </div>
           <ol class="list-decimal ml-4 mb-4">
             <li>Go to <a href="https://jup.ag">https://jup.ag</a></li>
@@ -703,28 +698,24 @@
             uncomfortable truth that Solana City is rife with crime.
           </p>
           <p>
-            Code is law here and there are people out there who will try to
+            When code is law, there exist people out there who will try to
             exploit unsuspecting foreign visitors.
           </p>
           <p class="text-xl font-semibold text-[#ebebeb]">
             Broad-types of crime to avoid
           </p>
           <ul class="list-disc ml-4 mb-4">
-            <li>Spoofed Websites</li>
-            <li>Wallet-drainers</li>
-            <li>NFT Rugs</li>
-            <li>Fake tokens</li>
+            <li class="text-white">Spoofed Websites</li> Always make sure you're on the correct website. And when in doubt go check the project's twitter.
+            <li class="text-white" >Wallet-drainers</li> Be careful when accepting transactions on sites you're not familiar with.
+            <li class="text-white" >NFT Rugs</li> NFTs projects often make tall claims and don't live up to them. Do your due diligence before you pick one.
+            <li class="text-white">Fake tokens</li> When anyone can create any currency, they do. Make sure you understand what token you're receiving.
           </ul>
           <p>
             This trip is carefully curated and we’re only starting with 0.05 Sol
-            so the risk of ruin is low.
-          </p>
+            so losing everything is still ok.          </p>
           <p>
             But if you ever do decide to come back with a bigger purse, please
-            please educate yourself on how to stay safe.
-          </p>
-          <p class="text-[#ebebeb]">
-            It <strong>is</strong> possible to stay safe here, it just takes vigilance.
+            please educate yourself on how to stay safe. It <strong class="text-white">is</strong> possible to stay safe here, it just takes vigilance.
           </p>
 
           <p class="py-8">
@@ -755,7 +746,7 @@
           </p>
           <p>
             Lets visit Marinade to understand who you are paying this amount to.
-            Along the way, you will also how the Solana blockchain runs and how
+            Along the way, you will also learn how the Solana blockchain runs and how
             you could be benefiting from it.
           </p>
 
@@ -788,7 +779,7 @@
           <p>
             A Validator is a very powerful computer that runs the software
             underlying Solana. There are many of them and they’re spread across
-            the globe. You can see the current count on Solana.fm
+            the globe. You can see the current count on <a href="https://solana.fm" target="_blank"> Solana.fm </a>
           </p>
           <p>
             These Validators ‘validate’ transactions. They confirm things like
@@ -798,13 +789,13 @@
           </p>
           <p>
             The transaction fee you pay goes to the Validators for for doing all
-            of this work,
+            of this work.
           </p>
           <p>
             While anyone can run a validator, all validators are not equal. A
             validator is as powerful as the amount of the SOL that is delegated
             to it. Users can delegate their Sol to a validator and in return,
-            they will earn interest on their Sol.
+            they earn interest on their Sol.
           </p>
           <div
             class="text-2xl font-semibold mt-12 text-[#222222]"
@@ -813,7 +804,7 @@
             Where does Marinade fit in?
           </div>
           <p>
-            People give Marinade their SOL, this is called Staking. Marinade
+            People give Marinade their SOL, this is called <span class="font-semibold">Staking</span> . Marinade
             then takes this SOL and distributes it across validators on Solana.
             This way, there’s no singular all-powerful validator and the
             resiliency of the network is better.
@@ -1189,6 +1180,12 @@
             If you enjoyed being shown around, I would appreciate a 
             shout-out at <a href="https://twitter.com/adarshrao_">@adarshrao_</a> 
           </p>
+
+          <p>
+            Know somebody that might benefit from this guide? Send it to them.
+          </p>
+
+
           <!-- <p class="underline text-blue-500">Click here to Tweet</p> -->
 
           <!-- <div class="text-xl font-semibold" id="looking-for-more">
