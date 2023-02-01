@@ -223,8 +223,11 @@
           Connect
         </div> -->
 
-        <div class="my-8 pb-16" @click="boop">
+        <div class="my-8 pb-8" @click="boop">
           <wallet-multi-button></wallet-multi-button>
+          
+          <div class="pt-4" v-if="connected">Scroll down to continue</div>
+
         </div>
       </div>
     </div>
@@ -285,9 +288,12 @@
                 inside and explore you will need Solana’s native currency called
                 <strong>SOL </strong>
               </p>
+
+              <p>Right now, the price of 1 Sol is ${{ solPrice }}</p>
+
               <p class="mb-4">
-                Taking an action on Solana usually costs a minimum of 0.00005 Sol =
-                $0.0001075. Basically nothing.
+                But you don't need a full SOL. Taking an action on Solana usually only costs a minimum of 0.00005 Sol =
+                $ {{0.00005*solPrice}}. Basically nothing.
               </p>
             </div>
 
@@ -304,7 +310,7 @@
 
           <p class="mb-4">
             To get the most out of today’s tour, I recommend having 0.05 SOL ~=
-            $1
+            ${{0.05*solPrice}}
           </p>
 
           <div class="text-2xl font-bold mt-8 mb-4">
@@ -1217,6 +1223,8 @@
 <script>
 import "solana-wallets-vue/styles.css";
 
+import axios from "axios";
+
 import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
@@ -1226,7 +1234,7 @@ import { WalletMultiButton } from "solana-wallets-vue";
 
 const wallets = [new PhantomWalletAdapter()];
 
-initWallet({ wallets, autoConnect: false });
+initWallet({ wallets, autoConnect: true });
 
 const data = useWallet();
 
@@ -1245,20 +1253,38 @@ export default {
       showFrakt: false,
       showDegen: false,
       connected,
+      solPrice: 25
     };
   },
   components: {
     WalletMultiButton,
   },
-  computed: {},
-  methods: {
-    async boop() {
-      // console.log("boop")
-      // this.showRemainingContent = !this.showRemainingContent;
-      await setTimeout(() => {
+  watch : {
+    connected() {
+        setTimeout(() => {
         this.$refs["show"].scrollIntoView({ behavior: "smooth" });
       }, 500);
-    },
+    }
+  }
+  ,
+  mounted () {
+    axios
+      .get('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd')
+      .then(response => (
+        this.solPrice = response.data.solana.usd
+        )    
+      )
+      .catch (error => console.log(error))
+  },
+  computed: {},
+  methods: {
+    // async boop() {
+    //   console.log("boop")
+    //   // this.showRemainingContent = !this.showRemainingContent;
+    //   await setTimeout(() => {
+    //     this.$refs["show"].scrollIntoView({ behavior: "smooth" });
+    //   }, 500);
+    // },
     display(string) {
       switch (string) {
         case "magiceden":
