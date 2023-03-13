@@ -7,15 +7,12 @@
         grid
         grid-cols-[1fr_minmax(240px,300px)_1fr]
         pt-12
-        sm:grid-cols-[1fr_800px_1fr]
-        sm:pt-64
-        sm:py-48
-        sm:pr-32
+        sm:grid-cols-[1fr_800px_1fr] sm:pt-64 sm:py-48 sm:pr-32
       "
     >
       <div class="flex flex-col pb-16 sm:flex-row sm:space-center col-start-2">
         <img
-          class=" scale-75 w-100% sm:h-[250px]"
+          class="scale-75 w-100% sm:h-[250px]"
           src="../assets/SolanaLogo.png"
           alt="Untitled"
         />
@@ -34,13 +31,17 @@
           </p>
 
           <p class="my-4 pt-4 max-w-md text-[#8a8a8a]">
-            by <a clas="!text-[#8a8a8a]" target="_blank" href="https://twitter.com/adarshrao_">@adarshrao_</a>
-            
+            by
+            <a
+              clas="!text-[#8a8a8a]"
+              target="_blank"
+              href="https://twitter.com/adarshrao_"
+              >@adarshrao_</a
+            >
           </p>
         </div>
       </div>
     </div>
-
 
     <div
       id="phantom"
@@ -68,21 +69,23 @@
         <!-- <div class="text-3xl font-bold pt-12">1 — Phantom</div> -->
         <p>
           <img
-            class=" w-3/4 sm:w-2/5 my-4 pt-8 pb-4"
+            class="w-3/4 sm:w-2/5 my-4 pt-8 pb-4"
             src="../assets/phantom2.png"
             alt="Untitled"
           />
         </p>
         <p>
           Phantom lets you to create a Solana wallet that you will need as we
-          make our way through the day’s itinerary. Creating a wallet is free, easy and only takes a few minutes.
+          make our way through the day’s itinerary. Creating a wallet is free,
+          easy and only takes a few minutes.
         </p>
         <div class="text-2xl font-semibold mt-12 text-[#ebebeb]">
           What is a wallet?
         </div>
         <p class="!mt-2">
-          The wallet is your access pass to the blockchain. To connect to
-          any app on Solana and take an action, you will need to connect with a compatible wallet.
+          The wallet is your access pass to the blockchain. To connect to any
+          app on Solana and take an action, you will need to connect with a
+          compatible wallet.
         </p>
         <p>
           Every wallet consists of two parts — A
@@ -106,8 +109,8 @@
                 </ul>
               </li>
               <li>
-                Think of this as your username, your identity. You can share this with other
-                people.
+                Think of this as your username, your identity. You can share
+                this with other people.
               </li>
             </ul>
           </li>
@@ -138,7 +141,7 @@
         <ul class="list-decimal ml-4">
           <li>
             Visit
-            <a href="https://phantom.app/downloads"
+            <a target="_blank" href="https://phantom.app/download"
               >https://phantom.app/downloads</a
             >
           </li>
@@ -160,7 +163,9 @@
 
             <p class="my-8">
               If you’re stuck,
-              <a href="https://www.youtube.com/watch?v=yqW4X0wQ9DA"
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=yqW4X0wQ9DA"
                 >here’s a link</a
               >
               to a step-by-step Youtube video to help you through it.
@@ -225,9 +230,8 @@
 
         <div class="my-8 pb-8" @click="boop">
           <wallet-multi-button></wallet-multi-button>
-          
-          <div class="pt-4" v-if="connected">Scroll down to continue</div>
 
+          <div class="pt-4" v-if="connected">Scroll down to continue</div>
         </div>
       </div>
     </div>
@@ -284,16 +288,18 @@
                 yet.
               </p>
               <p class="mb-4">
-                While visiting all of todays attractions is free, in order to actually go
-                inside and explore you will need Solana’s native currency called
+                While visiting all of todays attractions is free, in order to
+                actually go inside and explore you will need Solana’s native
+                currency called
                 <strong>SOL </strong>
               </p>
 
               <p>Right now, the price of 1 Sol is ${{ solPrice }}</p>
 
               <p class="mb-4">
-                But you don't need a full SOL. Taking an action on Solana usually only costs a minimum of 0.00005 Sol =
-                $ {{0.00005*solPrice}}. Basically nothing.
+                But you don't need a full SOL. Taking an action on Solana
+                usually only costs a minimum of 0.00005 Sol = $
+                {{ 0.00005 * solPrice }}. Basically nothing.
               </p>
             </div>
 
@@ -310,7 +316,7 @@
 
           <p class="mb-4">
             To get the most out of today’s tour, I recommend having 0.05 SOL ~=
-            ${{0.05*solPrice}}
+            ${{ 0.05 * solPrice }}
           </p>
 
           <div class="text-2xl font-bold mt-8 mb-4">
@@ -330,8 +336,16 @@
 
           <p class="italic text-white/60 pb-4">
             Don't know anybody like that? Let me be your friend :) Tweet/DM me
-            at <a class="text-white/60" href="https://twitter.com/adarshrao_"> @adarshrao_ </a> with your wallet address and I'll be happy to send SOL to get
-            you started.
+            at
+            <a
+              class="text-white/60"
+              target="_blank"
+              href="https://twitter.com/adarshrao_"
+            >
+              @adarshrao_
+            </a>
+            with your wallet address and I'll be happy to send SOL to get you
+            started.
           </p>
 
           <div class="text-2xl font-semibold mt-8">Don't mind spending $?</div>
@@ -354,8 +368,8 @@
         </li>
       </ul> -->
           <p class="mb-16">
-            If neither of the above options work for you, fret not because you still have a couple of other
-            options.
+            If neither of the above options work for you, fret not because you
+            still have a couple of other options.
           </p>
 
           <p>
@@ -464,16 +478,30 @@
           </p>
 
           <p>
-            <a href="https://magiceden.io/marketplace/solana_monkey_business"
+            <a
+              target="_blank"
+              href="https://magiceden.io/marketplace/solana_monkey_business"
               >Monkeys</a
             >,
-            <a href="https://magiceden.io/marketplace/famous_fox_federation"
+            <a
+              target="_blank"
+              href="https://magiceden.io/marketplace/famous_fox_federation"
               >foxes</a
-            >, <a href="https://magiceden.io/marketplace/okay_bears">bears</a>,
-            <a href="https://magiceden.io/marketplace/degenerate_ape_academy"
+            >,
+            <a
+              target="_blank"
+              href="https://magiceden.io/marketplace/okay_bears"
+              >bears</a
+            >,
+            <a
+              target="_blank"
+              href="https://magiceden.io/marketplace/degenerate_ape_academy"
               >apes</a
             >,
-            <a href="https://magiceden.io/marketplace/galactic_geckos">geckos</a
+            <a
+              target="_blank"
+              href="https://magiceden.io/marketplace/galactic_geckos"
+              >geckos</a
             >… we’ve got it all.
           </p>
 
@@ -489,7 +517,9 @@
           <ol class="list-decimal ml-4">
             <li>
               Visit Magic Eden at
-              <a href="https://magiceden.io/">https://magiceden.io/</a>
+              <a target="_blank" href="https://magiceden.io/"
+                >https://magiceden.io/</a
+              >
             </li>
             <li>Click Connect Wallet on the Top Right</li>
             <li>Click Accept on the popup that shows up</li>
@@ -600,23 +630,25 @@
           <div class="flex flex-col mb-6">
             For example, your wallet could also contain:
 
-            <span
-              > <span class="text-white font-semibold"> USDC, USDT </span> — Stablecoins pegged to the value of the US
-              Dollar</span
+            <span>
+              <span class="text-white font-semibold"> USDC, USDT </span> —
+              Stablecoins pegged to the value of the US Dollar</span
             >
 
-            <span
-              >
-              <span class="text-white font-semibold"> MNDE, LFNTY, ORCA </span>— Tokens belonging to teams and projects on
-              Solana
+            <span>
+              <span class="text-white font-semibold"> MNDE, LFNTY, ORCA </span>—
+              Tokens belonging to teams and projects on Solana
             </span>
 
             <span
-              ><span class="text-white font-semibold"> mSOL, SOL </span> — Staked version of Sol (will explain this later
-              on)</span
+              ><span class="text-white font-semibold"> mSOL, SOL </span> —
+              Staked version of Sol (will explain this later on)</span
             >
 
-            <span> <span class="text-white font-semibold"> Bonk </span>— Meme tokens</span>
+            <span>
+              <span class="text-white font-semibold"> Bonk </span>— Meme
+              tokens</span
+            >
           </div>
 
           <p>
@@ -639,7 +671,9 @@
             Steps
           </div>
           <ol class="list-decimal ml-4 mb-4">
-            <li>Go to <a href="https://jup.ag">https://jup.ag</a></li>
+            <li>
+              Go to <a target="_blank" href="https://jup.ag">https://jup.ag</a>
+            </li>
             <li>Connect your Wallet → Select Phantom</li>
             <li>For Token One Select Sol</li>
             <li>For Token Two select USDC</li>
@@ -711,17 +745,28 @@
             Broad-types of crime to avoid
           </p>
           <ul class="list-disc ml-4 mb-4">
-            <li class="text-white">Spoofed Websites</li> Always make sure you're on the correct website. And when in doubt go check the project's twitter.
-            <li class="text-white" >Wallet-drainers</li> Be careful when accepting transactions on sites you're not familiar with.
-            <li class="text-white" >NFT Rugs</li> NFTs projects often make tall claims and don't live up to them. Do your due diligence before you pick one.
-            <li class="text-white">Fake tokens</li> When anyone can create any currency, they do. Make sure you understand what token you're receiving.
+            <li class="text-white">Spoofed Websites</li>
+            Always make sure you're on the correct website. And when in doubt go
+            check the project's twitter.
+            <li class="text-white">Wallet-drainers</li>
+            Be careful when accepting transactions on sites you're not familiar
+            with.
+            <li class="text-white">NFT Rugs</li>
+            NFTs projects often make tall claims and don't live up to them. Do
+            your due diligence before you pick one.
+            <li class="text-white">Fake tokens</li>
+            When anyone can create any currency, they do. Make sure you
+            understand what token you're receiving.
           </ul>
           <p>
             This trip is carefully curated and we’re only starting with 0.05 Sol
-            so losing everything is still ok.          </p>
+            so losing everything is still ok.
+          </p>
           <p>
             But if you ever do decide to come back with a bigger purse, please
-            please educate yourself on how to stay safe. It <strong class="text-white">is</strong> possible to stay safe here, it just takes vigilance.
+            please educate yourself on how to stay safe. It
+            <strong class="text-white">is</strong> possible to stay safe here,
+            it just takes vigilance.
           </p>
 
           <p class="py-8">
@@ -752,8 +797,8 @@
           </p>
           <p>
             Lets visit Marinade to understand who you are paying this amount to.
-            Along the way, you will also learn how the Solana blockchain runs and how
-            you could be benefiting from it.
+            Along the way, you will also learn how the Solana blockchain runs
+            and how you could be benefiting from it.
           </p>
 
           <div class="border-b border-gray-800/20 pt-8"></div>
@@ -785,7 +830,10 @@
           <p>
             A Validator is a very powerful computer that runs the software
             underlying Solana. There are many of them and they’re spread across
-            the globe. You can see the current count on <a href="https://solana.fm" target="_blank"> Solana.fm </a>
+            the globe. You can see the current count on
+            <a target="_blank" href="https://solana.fm" target="_blank">
+              Solana.fm
+            </a>
           </p>
           <p>
             These Validators ‘validate’ transactions. They confirm things like
@@ -810,10 +858,11 @@
             Where does Marinade fit in?
           </div>
           <p>
-            People give Marinade their SOL, this is called <span class="font-semibold">Staking</span> . Marinade
-            then takes this SOL and distributes it across validators on Solana.
-            This way, there’s no singular all-powerful validator and the
-            resiliency of the network is better.
+            People give Marinade their SOL, this is called
+            <span class="font-semibold">Staking</span> . Marinade then takes
+            this SOL and distributes it across validators on Solana. This way,
+            there’s no singular all-powerful validator and the resiliency of the
+            network is better.
           </p>
           <p>But, why would people give Marinade their Sol?</p>
           <p>
@@ -829,7 +878,7 @@
           <ol class="list-decimal ml-4 mb-2">
             <li>
               Go to
-              <a href="https://marinade.finance/app/staking/"
+              <a target="_blank" href="https://marinade.finance/app/staking/"
                 >https://marinade.finance/app/staking/</a
               >
             </li>
@@ -946,7 +995,10 @@
           </p>
           <p class="text-lg font-semibold pt-4 text-[#ebebeb]">Steps</p>
           <ol class="list-decimal ml-4 mb-4">
-            <li>Go to <a href="https://solend.fi">https://solend.fi</a></li>
+            <li>
+              Go to
+              <a target="_blank" href="https://solend.fi">https://solend.fi</a>
+            </li>
             <li>Connect your Wallet → Select Phantom</li>
             <li>Click on Turbo-Sol Pool</li>
             <li>Click on USDC</li>
@@ -1183,14 +1235,15 @@
             first day in Solana city.
           </p>
           <p>
-            If you enjoyed being shown around, I would appreciate a 
-            shout-out at <a href="https://twitter.com/adarshrao_">@adarshrao_</a> 
+            If you enjoyed being shown around, I would appreciate a shout-out at
+            <a target="_blank" href="https://twitter.com/adarshrao_"
+              >@adarshrao_</a
+            >
           </p>
 
           <p>
             Know somebody that might benefit from this guide? Send it to them.
           </p>
-
 
           <!-- <p class="underline text-blue-500">Click here to Tweet</p> -->
 
@@ -1253,28 +1306,26 @@ export default {
       showFrakt: false,
       showDegen: false,
       connected,
-      solPrice: 25
+      solPrice: 25,
     };
   },
   components: {
     WalletMultiButton,
   },
-  watch : {
+  watch: {
     connected() {
-        setTimeout(() => {
+      setTimeout(() => {
         this.$refs["show"].scrollIntoView({ behavior: "smooth" });
       }, 500);
-    }
-  }
-  ,
-  mounted () {
+    },
+  },
+  mounted() {
     axios
-      .get('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd')
-      .then(response => (
-        this.solPrice = response.data.solana.usd
-        )    
+      .get(
+        "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
       )
-      .catch (error => console.log(error))
+      .then((response) => (this.solPrice = response.data.solana.usd))
+      .catch((error) => console.log(error));
   },
   computed: {},
   methods: {
