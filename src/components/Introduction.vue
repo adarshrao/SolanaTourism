@@ -831,9 +831,7 @@
             A Validator is a very powerful computer that runs the software
             underlying Solana. There are many of them and they’re spread across
             the globe. You can see the current count on
-            <a target="_blank" href="https://solana.fm" target="_blank">
-              Solana.fm
-            </a>
+            <a target="_blank" href="https://solana.fm"> Solana.fm </a>
           </p>
           <p>
             These Validators ‘validate’ transactions. They confirm things like
@@ -1089,7 +1087,7 @@
               </span>
               — Other users like yourself. Some of these NFT collections are
               fairly popular and desirable and there are people who trust that
-              the value of
+              the value of the NFTs will retain some value.
             </li>
             <li>
               <span class="font-semibold"> What is the risk? </span> If the NFT
