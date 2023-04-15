@@ -1,36 +1,38 @@
 <script>
-import {marked} from 'marked'
-import Introduction from './components/Introduction.vue'
+import { marked } from "marked";
+import Introduction from "./components/Introduction.vue";
+import Home from "./components/Home.vue";
+import Tour from "./components/Tour.vue";
+import NFTTown from "./components/NFTTown.vue";
 
 export default {
-  name: 'App',
- data() {
-  return {
-    count: 0
-  }
- },
-  components : { 
-    Introduction
+  name: "App",
+  data() {
+    return {
+      count: 0,
+    };
   },
-  methods : {
+  components: {
+    Introduction,
+    Home,
+    Tour,
+    NFTTown,
+  },
+  methods: {
     increment() {
       this.count += 1;
-    }
-  }
-
-}
-
+    },
+  },
+};
 </script>
 
 <template>
-
-<div class="">
-
-  <Introduction />
-
-
-</div>
-
+  <div class="">
+    <!-- <Introduction /> -->
+    <!-- <Home /> -->
+    <!-- <Tour /> -->
+    <NFTTown />
+  </div>
 </template>
 
 <style>
