@@ -12,7 +12,8 @@
     "axios": "^0.21.4",
     "marked": "^4.2.12",
     "solana-wallets-vue": "^0.5.2",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

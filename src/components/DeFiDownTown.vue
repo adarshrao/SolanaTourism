@@ -24,7 +24,7 @@
     >
       <div class="absolute"><img src="../assets/largeMap1.png" alt="" /></div>
       <div class="flex flex-col">
-        <div class="text-2xl font-bold">NFT Town</div>
+        <div class="text-2xl font-bold">DeFi DownTown</div>
         <!-- <div class="bg-black w-max py-4 px-8 mt-4 rounded-md">
           Explain NFTs like I'm 5
         </div> -->
@@ -37,8 +37,8 @@
               <img src="../assets/tensor.png" alt="" />
             </div>
             <div class="flex flex-col">
-              <div class="font-bold">Tensor</div>
-              <div class="font-light">Amazon for art</div>
+              <div class="font-bold">Openbook</div>
+              <div class="font-light">NASDAQ on Solana</div>
             </div>
           </router-link>
         </div>
@@ -47,8 +47,8 @@
             <img src="../assets/logos/magiceden.png" alt="" />
           </div>
           <div class="flex flex-col">
-            <div class="font-bold">MagicEden</div>
-            <div class="font-light">Ebay for art</div>
+            <div class="font-bold">Mango</div>
+            <div class="font-light">Margin Trading</div>
           </div>
         </div>
       </div>

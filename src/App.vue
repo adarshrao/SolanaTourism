@@ -27,11 +27,12 @@ export default {
 </script>
 
 <template>
+  <router-view />
   <div class="">
     <!-- <Introduction /> -->
     <!-- <Home /> -->
     <!-- <Tour /> -->
-    <NFTTown />
+    <!-- <NFTTown /> -->
   </div>
 </template>
 
