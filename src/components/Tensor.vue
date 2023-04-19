@@ -53,7 +53,7 @@ export default {
         class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-12 rounded-xl"
       >
         <div class="mb-4">
-          <router-link to="/nft-town">&lt;- Back to NFT Town</router-link>
+          <router-link to="/nft-square">&lt;- Back to NFT Town</router-link>
         </div>
 
         <div class="flex flex-row">

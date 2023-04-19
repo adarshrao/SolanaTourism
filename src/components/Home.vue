@@ -150,9 +150,11 @@
         </div>
 
         <div class="flex flex-col mt-3">
-          <div class="text-xl font-semibold text-white mt-8">Coming Soon</div>
+          <div class="text-md sm:text-xl font-semibold text-white mt-4 sm:mt-8">
+            Coming Soon
+          </div>
 
-          <div class="flex flex-col sm:flex-row gap-8">
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-8">
             <div
               class="
                 border border-gray-800
@@ -174,7 +176,7 @@
                 </div>
 
                 <div class="flex flex-col text-center sm:text-left">
-                  <div class="text-xl font-semibold">
+                  <div class="text-lg sm:text-xl font-semibold">
                     Trader’s guide to Solana
                   </div>
                   <div class="flex flex-row">
@@ -213,16 +215,18 @@
                 hover:opacity-40
               "
             >
-              <div class="flexflex-col sm:flex-row justify-center items-center">
-                <div class="w-16 h-max mr-6">
+              <div
+                class="flex flex-col sm:flex-row justify-center items-center"
+              >
+                <div class="w-12 mb-4 sm:mb-0 sm:w-16 h-auto mr-6">
                   <img src="../assets/hustlers-guide.png" alt="" />
                 </div>
 
-                <div class="flex flex-col">
-                  <div class="flex flex-row items-center">
-                    <div class="text-xl font-semibold">
-                      Hustler’s guide to Solana
-                    </div>
+                <div class="flex flex-col text-center sm:text-left">
+                  <div class="text-lg sm:text-xl font-semibold">
+                    Hustler’s guide to Solana
+                  </div>
+                  <div class="flex flex-row">
                     <div class="">
                       <!-- <div
                       class="
@@ -337,10 +341,29 @@
         </div>
       </div> -->
       </div>
+
+      <div class="text-white flex flex-col items-center justify-center">
+        <div class="border-b w-full mt-8 opacity-10"></div>
+
+        <div class="flex flex-row-reverse w-full mt-6 justify-between">
+          <div class="flex flex-row items-center">
+            <img
+              class="w-5 h-max mr-4"
+              src="../assets/icons/discord.png"
+              alt=""
+            />
+            <img class="w-5 h-max" src="../assets/icons/twitter.png" alt="" />
+          </div>
+
+          <div class="text-xs opacity-40">
+            Project made possible via a grant from
+            <a class="text-white font-semibold" href="https://superteam.fun"
+              >Superteam</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- <div id="navigation" class="font-bold text-lg text-white">
-      <span> SOLANA T</span>
-    </div> -->
   </div>
 </template>
 

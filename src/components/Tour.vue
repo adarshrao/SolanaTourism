@@ -22,6 +22,17 @@ export default {
       showMarinade: false,
       showMagiceden: false,
       showFrakt: false,
+      navigation: [
+        "Welcome to Solana",
+        "Getting your visa, Phantom",
+        "Funding your wallet",
+        "Currency Exchange, Jupiter",
+        "Bank, Solend",
+        "Law and Order, Marinade",
+        "Art Marketplace, MagicEden",
+        "NFT Bank, Frakt",
+        "End of Tour",
+      ],
     };
   },
   components: {
@@ -73,15 +84,14 @@ export default {
 
 
 <template>
-  <div class="min-h-screen h-full w-screen bg-black p-8">
+  <div class="min-h-screen h-full w-screen bg-black sm:p-8">
     <div
       id="navigation"
       ref="top"
-      class="font-bold text-lg text-white text-center"
+      class="font-bold text-lg text-white text-center pt-8"
     >
       <router-link to="/">
-        <span> SOLANA </span> <br />
-        <span class="">TOURISM </span>
+        <span> SOLANA T</span>
       </router-link>
     </div>
 
@@ -89,16 +99,17 @@ export default {
       class="
         bg-[#1B1B1B]
         w-100vw
-        mx-64
-        mt-16
+        sm:max-w-7xl sm:mx-auto sm:mt-16
         h-auto
         text-white
-        grid grid-cols-3
+        flex flex-col-reverse
+        mt-4
+        sm:grid sm:grid-cols-3
         rounded-xl
         text-lg text-[#999999]
       "
     >
-      <div class="col-span-2 p-12">
+      <div class="sm:col-span-2 pt-0 p-8 sm:p-12">
         <Intro v-if="current == 0" />
         <Phantom v-if="current == 1" />
         <Funding v-if="current == 2" />
@@ -168,71 +179,83 @@ export default {
       </div>
       <div
         id="Navigation"
-        class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-12"
+        class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-8"
       >
-        <!-- <div class="text-xl">Itinerary</div> -->
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(0)"
-          :class="{ class1: current == 0 }"
-        >
-          Welcome to Solana
+        <div class="flex flex-row justify-between sm:hidden">
+          <div>
+            Stop {{ this.current + 1 }} : {{ this.navigation[this.current] }}
+          </div>
+          <!-- <div>Expand</div> -->
+
+          <div class="border-b"></div>
         </div>
+
         <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(1)"
-          :class="{ class1: current == 1 }"
+          class="hidden sm:flex sm:flex-col gap-3 text-gray-400 bg-[#181818]"
         >
-          Getting your visa, Phantom
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(2)"
-          :class="{ class1: current == 2 }"
-        >
-          Funding your wallet
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(3)"
-          :class="{ class1: current == 3 }"
-        >
-          Currency Exchange, Jupiter
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(4)"
-          :class="{ class1: current == 4 }"
-        >
-          Bank, Solend
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(5)"
-          :class="{ class1: current == 5 }"
-        >
-          Law and Order, Marinade
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(6)"
-          :class="{ class1: current == 6 }"
-        >
-          Art Marketplace, MagicEden
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(7)"
-          :class="{ class1: current == 7 }"
-        >
-          NFT Bank, Frakt
-        </div>
-        <div
-          class="cursor-pointer hover:opacity-60"
-          @click="teleport(8)"
-          :class="{ class1: current == 8 }"
-        >
-          End of Tour
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(0)"
+            :class="{ class1: current == 0 }"
+          >
+            Welcome to Solana
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(1)"
+            :class="{ class1: current == 1 }"
+          >
+            Getting your visa, Phantom
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(2)"
+            :class="{ class1: current == 2 }"
+          >
+            Funding your wallet
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(3)"
+            :class="{ class1: current == 3 }"
+          >
+            Currency Exchange, Jupiter
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(4)"
+            :class="{ class1: current == 4 }"
+          >
+            Bank, Solend
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(5)"
+            :class="{ class1: current == 5 }"
+          >
+            Law and Order, Marinade
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(6)"
+            :class="{ class1: current == 6 }"
+          >
+            Art Marketplace, MagicEden
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(7)"
+            :class="{ class1: current == 7 }"
+          >
+            NFT Bank, Frakt
+          </div>
+          <div
+            class="cursor-pointer hover:opacity-60"
+            @click="teleport(8)"
+            :class="{ class1: current == 8 }"
+          >
+            End of Tour
+          </div>
         </div>
       </div>
     </div>
