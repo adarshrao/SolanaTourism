@@ -9,27 +9,32 @@
               mx-auto
               w-full
               text-4xl
-              sm:text-7xl sm:mt-24
+              sm:text-6xl sm:mt-24
               font-bold
             "
           >
-            SOLANA T
+            SOLANA TOURISM
           </div>
           <div class="text-lg sm:text-xl text-white opacity-50 w-96 mt-2">
             Curated tour guides introducing you to the best projects on Solana
           </div>
 
           <div class="flex flex-row mt-4 items-center">
-            <img
-              class="w-6 h-max mr-4"
-              src="../assets/icons/discord.png"
-              alt=""
-            />
-            <img
-              class="w-6 h-max mr-4"
-              src="../assets/icons/twitter.png"
-              alt=""
-            />
+            <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
+              <img
+                class="w-6 h-max mr-4"
+                src="../assets/icons/discord.png"
+                alt=""
+              />
+            </a>
+
+            <a target="_blank" href="https://twitter.com/SolanaTourism">
+              <img
+                class="w-6 h-max mr-4"
+                src="../assets/icons/twitter.png"
+                alt=""
+              />
+            </a>
           </div>
         </div>
 
@@ -50,15 +55,15 @@
           </div>
           <div class="flex flex-col">
             <span>Population</span>
-            <span>24M Active Wallets</span>
+            <span>8.6M Active Wallets</span>
           </div>
           <div class="flex flex-col">
-            <span>Businesses</span>
-            <span>12k Programs</span>
+            <span>Total Assets</span>
+            <span>$276 Million </span>
           </div>
           <div class="flex flex-col">
             <span>Law and Order</span>
-            <span>4k+ Validators</span>
+            <span>1.7k+ Validators</span>
           </div>
         </div>
       </div>
@@ -109,7 +114,8 @@
               sm:flex
               flex-row
               text-center
-              gap-10
+              gap-4
+              sm:gap-6
               -top-20
               left-72
               h-0
@@ -347,12 +353,16 @@
 
         <div class="flex flex-row-reverse w-full mt-6 justify-between">
           <div class="flex flex-row items-center">
-            <img
-              class="w-5 h-max mr-4"
-              src="../assets/icons/discord.png"
-              alt=""
-            />
-            <img class="w-5 h-max" src="../assets/icons/twitter.png" alt="" />
+            <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
+              <img
+                class="w-5 h-max mr-4"
+                src="../assets/icons/discord.png"
+                alt=""
+              />
+            </a>
+            <a target="_blank" href="https://twitter.com/SolanaTourism">
+              <img class="w-5 h-max" src="../assets/icons/twitter.png" alt="" />
+            </a>
           </div>
 
           <div class="text-xs opacity-40">

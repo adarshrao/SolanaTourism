@@ -5,7 +5,7 @@
       class="font-bold text-base pt-8 sm:text-lg text-white text-center"
     >
       <router-link to="/">
-        <span> SOLANA T </span>
+        <span> SOLANA TOURISM </span>
       </router-link>
     </div>
 
@@ -22,9 +22,12 @@
         rounded-xl
         sm:p-12
         overflow-hidden
+        bg-[url('../assets/map5.png')] bg-repeat-x bg-cover
       "
     >
-      <div class="absolute"><img src="../assets/largeMap1.png" alt="" /></div>
+      <div class="absolute">
+        <!-- <img class="object-cover" src="../assets/largeMap1.png" alt="" /> -->
+      </div>
       <div class="flex flex-col">
         <div class="text-2xl font-bold pt-4 pl-4 sm:pt-0 sm:pl-0">
           DeFi DownTown
@@ -35,26 +38,28 @@
       </div>
 
       <div class="relative">
-        <div class="absolute fixed left-96 flex flex-row">
-          <router-link to="/tensor">
+        <router-link to="/drift">
+          <div class="absolute fixed left-96 flex flex-row">
             <div class="w-12 mr-2">
-              <img src="../assets/tensor.png" alt="" />
+              <img src="../assets/logos/drift.png" alt="" />
             </div>
             <div class="flex flex-col">
-              <div class="font-bold">Openbook</div>
-              <div class="font-light">NASDAQ on Solana</div>
+              <div class="font-bold">Drift</div>
+              <div class="font-light">On chain perpetuals</div>
             </div>
-          </router-link>
-        </div>
-        <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
-          <div class="w-12 mr-2">
-            <img src="../assets/logos/magiceden.png" alt="" />
           </div>
-          <div class="flex flex-col">
-            <div class="font-bold">Mango</div>
-            <div class="font-light">Margin Trading</div>
+        </router-link>
+        <router-link to="/mango">
+          <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
+            <div class="w-12 mr-2">
+              <img src="../assets/logos/mango.png" alt="" />
+            </div>
+            <div class="flex flex-col">
+              <div class="font-bold">Mango</div>
+              <div class="font-light">Margin Trading</div>
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>

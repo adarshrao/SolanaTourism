@@ -1,9 +1,11 @@
 <template>
   <div class="h-screen w-screen bg-black sm:p-8">
-    <div id="navigation" class="font-bold text-lg text-white text-center">
+    <div
+      id="navigation"
+      class="font-bold text-base pt-8 sm:text-lg text-white text-center"
+    >
       <router-link to="/">
-        <span> SOLANA </span> <br />
-        <span class="">TOURISM </span>
+        <span> SOLANA TOURISM </span>
       </router-link>
     </div>
 
@@ -22,6 +24,7 @@
         overflow-hidden
       "
     >
+      <!-- bg-[url('../assets/map5.png')] bg-repeat-x bg-cover -->
       <div class="absolute"><img src="../assets/largeMap1.png" alt="" /></div>
       <div class="flex flex-col">
         <div class="text-2xl font-bold pt-4 pl-4 sm:pt-0 sm:pl-0">
@@ -30,29 +33,35 @@
         <!-- <div class="bg-black w-max py-4 px-8 mt-4 rounded-md">
           Explain NFTs like I'm 5
         </div> -->
+
+        <!-- <div class="relative -top-1 text-xs">
+          Think we're missing a project? Join Discord and let us know!
+        </div> -->
       </div>
 
       <div class="relative">
-        <div class="absolute fixed left-96 flex flex-row">
-          <router-link to="/tensor">
+        <router-link to="/tensor">
+          <div class="absolute fixed left-96 flex flex-row">
             <div class="w-12 mr-2">
               <img src="../assets/tensor.png" alt="" />
             </div>
             <div class="flex flex-col">
               <div class="font-bold">Tensor</div>
-              <div class="font-light">Amazon for art</div>
+              <div class="font-light">Pro NFT Trading on Solana</div>
             </div>
-          </router-link>
-        </div>
-        <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
-          <div class="w-12 mr-2">
-            <img src="../assets/logos/magiceden.png" alt="" />
           </div>
-          <div class="flex flex-col">
-            <div class="font-bold">MagicEden</div>
-            <div class="font-light">Ebay for art</div>
+        </router-link>
+        <router-link to="/magiceden">
+          <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
+            <div class="w-12 mr-2">
+              <img src="../assets/logos/magiceden.png" alt="" />
+            </div>
+            <div class="flex flex-col">
+              <div class="font-bold">MagicEden</div>
+              <div class="font-light">NFT Marketplace</div>
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>

@@ -116,15 +116,16 @@
     </p>
 
     <p class="italic text-white/60 pb-4">
-      Don't know anybody like that? Let me be your friend :) Tweet/DM me at
+      Don't know anybody like that? Let us help you out! :) Tweet/DM at
       <a
         class="text-white/60"
         target="_blank"
-        href="https://twitter.com/adarshrao_"
+        href="https://twitter.com/SolanaTourism"
       >
-        @adarshrao_
+        @SolanaTourism
       </a>
-      with your wallet address and I'll be happy to send SOL to get you started.
+      with your wallet address and we'll be happy to send SOL to get you
+      started.
     </p>
 
     <div class="text-2xl font-semibold mt-8 text-white">

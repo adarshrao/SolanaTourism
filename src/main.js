@@ -5,8 +5,11 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home.vue";
 import Tour from "./components/Tour.vue";
 import NFTTown from "./components/NFTTown.vue";
-import Tensor from "./components/Tensor.vue";
 import DeFiDownTown from "./components/DeFiDownTown.vue";
+import Tensor from "./components/projects/Tensor.vue";
+import Mango from "./components/projects/Mango.vue";
+import Drift from "./components/projects/Drift.vue";
+import Magiceden from "./components/projects/Magiceden.vue";
 
 import "./assets/style.css";
 
@@ -32,6 +35,18 @@ const router = createRouter({
     {
       path: "/tensor",
       component: Tensor,
+    },
+    {
+      path: "/mango",
+      component: Mango,
+    },
+    {
+      path: "/drift",
+      component: Drift,
+    },
+    {
+      path: "/magiceden",
+      component: Magiceden,
     },
   ],
 });
