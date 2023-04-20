@@ -54,7 +54,7 @@
         <router-link to="/magiceden">
           <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
             <div class="w-12 mr-2">
-              <img src="../assets/logos/magiceden.png" alt="" />
+              <img src="../assets/logos/magicEden.png" alt="" />
             </div>
             <div class="flex flex-col">
               <div class="font-bold">MagicEden</div>
