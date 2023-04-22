@@ -1,49 +1,32 @@
 <script>
-import Phantom from "./tour_components/Phantom.vue";
-import Funding from "./tour_components/Funding.vue";
-import Intro from "./tour_components/Intro.vue";
-import Jupiter from "./tour_components/Jupiter.vue";
-import Solend from "./tour_components/Solend.vue";
-import Marinade from "./tour_components/Marinade.vue";
-import Magiceden from "./tour_components/Magiceden.vue";
-import Frakt from "./tour_components/Frakt.vue";
-import End from "./tour_components/End.vue";
+import Intro from "./tradingTour_components/Intro.vue";
+import Jupiter from "./tradingTour_components/Jupiter.vue";
+import Mango from "./tradingTour_components/Mango.vue";
+import Drift from "./tradingTour_components/Drift.vue";
+import Lifinity from "./tradingTour_components/Lifinity.vue";
+import End from "./tradingTour_components/End.vue";
 
 export default {
   name: "Tour",
   data() {
     return {
       current: 0,
-      showIntro: false,
-      showPhantom: false,
-      showFunding: false,
-      showJupiter: false,
-      showSolend: false,
-      showMarinade: false,
-      showMagiceden: false,
-      showFrakt: false,
       navigation: [
         "Welcome to Solana",
-        "Getting your visa, Phantom",
-        "Funding your wallet",
-        "Currency Exchange, Jupiter",
-        "Bank, Solend",
-        "Law and Order, Marinade",
-        "Art Marketplace, MagicEden",
-        "NFT Bank, Frakt",
+        "Buy Low and Sell High, Jupiter",
+        "Trade with leverage, Mango",
+        "Trade Perpetual Futures, Drift",
+        "Leave trading to a Hedgefund, Lifinity",
         "End of Tour",
       ],
     };
   },
   components: {
     Intro,
-    Funding,
-    Phantom,
     Jupiter,
-    Solend,
-    Marinade,
-    Magiceden,
-    Frakt,
+    Mango,
+    Drift,
+    Lifinity,
     End,
   },
   methods: {
@@ -57,7 +40,7 @@ export default {
       }
     },
     goNext() {
-      if (this.current < this.navigation.length + 1) {
+      if (this.current < this.navigation.length - 1) {
         this.current += 1;
 
         setTimeout(() =>
@@ -111,16 +94,13 @@ export default {
     >
       <div class="sm:col-span-2 pt-0 p-8 sm:p-12">
         <Intro v-if="current == 0" />
-        <Phantom v-if="current == 1" />
-        <Funding v-if="current == 2" />
-        <Jupiter v-if="current == 3" />
-        <Solend v-if="current == 4" />
-        <Marinade v-if="current == 5" />
-        <Magiceden v-if="current == 6" />
-        <Frakt v-if="current == 7" />
-        <End v-if="current == 8" />
+        <Jupiter v-if="current == 1" />
+        <Mango v-if="current == 2" />
+        <Drift v-if="current == 3" />
+        <Lifinity v-if="current == 4" />
+        <End v-if="current == this.navigation.length - 1" />
 
-        <div v-if="current == 8">
+        <div v-if="current == this.navigation.length - 1">
           <router-link to="/">
             <div
               v-if="current != 0"
@@ -143,7 +123,11 @@ export default {
           </router-link>
         </div>
 
-        <div v-if="current != 8" id="buttons" class="flex flex-row mt-8 gap-8">
+        <div
+          v-if="current != this.navigation.length - 1"
+          id="buttons"
+          class="flex flex-row mt-8 gap-8"
+        >
           <div
             v-if="current != 0"
             class="
@@ -198,63 +182,42 @@ export default {
             @click="teleport(0)"
             :class="{ class1: current == 0 }"
           >
-            Welcome to Solana
+            {{ this.navigation[0] }}
           </div>
           <div
             class="cursor-pointer hover:opacity-60"
             @click="teleport(1)"
             :class="{ class1: current == 1 }"
           >
-            Getting your visa, Phantom
+            {{ this.navigation[1] }}
           </div>
           <div
             class="cursor-pointer hover:opacity-60"
             @click="teleport(2)"
             :class="{ class1: current == 2 }"
           >
-            Funding your wallet
+            {{ this.navigation[2] }}
           </div>
           <div
             class="cursor-pointer hover:opacity-60"
             @click="teleport(3)"
             :class="{ class1: current == 3 }"
           >
-            Currency Exchange, Jupiter
+            {{ this.navigation[3] }}
           </div>
           <div
             class="cursor-pointer hover:opacity-60"
             @click="teleport(4)"
             :class="{ class1: current == 4 }"
           >
-            Bank, Solend
+            {{ this.navigation[4] }}
           </div>
           <div
             class="cursor-pointer hover:opacity-60"
             @click="teleport(5)"
             :class="{ class1: current == 5 }"
           >
-            Law and Order, Marinade
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(6)"
-            :class="{ class1: current == 6 }"
-          >
-            Art Marketplace, MagicEden
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(7)"
-            :class="{ class1: current == 7 }"
-          >
-            NFT Bank, Frakt
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(8)"
-            :class="{ class1: current == 8 }"
-          >
-            End of Tour
+            {{ this.navigation[5] }}
           </div>
         </div>
       </div>
@@ -263,9 +226,9 @@ export default {
 </template>
 
 
-<style scoped>
+<style>
 p {
-  margin-bottom: 16px;
-  margin-top: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 </style>

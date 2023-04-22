@@ -161,52 +161,39 @@
           </div>
 
           <div class="flex flex-col sm:flex-row gap-2 sm:gap-8">
-            <div
-              class="
-                border border-gray-800
-                px-6
-                py-6
-                rounded-md
-                mt-4
-                text-white
-                opacity-50
-                cursor-not-allowed
-                hover:opacity-40
-              "
-            >
+            <router-link to="/trading-tour">
               <div
-                class="flex flex-col sm:flex-row justify-center items-center"
+                class="
+                  border border-gray-800
+                  px-6
+                  py-6
+                  rounded-md
+                  mt-4
+                  text-white
+                  cursor-pointer
+                  hover:opacity-80
+                "
               >
-                <div class="w-12 mb-4 sm:mb-0 sm:w-16 h-auto mr-6">
-                  <img src="../assets/traders-guide.png" alt="" />
-                </div>
+                <div
+                  class="flex flex-col sm:flex-row justify-center items-center"
+                >
+                  <div class="w-12 mb-4 sm:mb-0 sm:w-16 h-auto mr-6">
+                    <img src="../assets/traders-guide.png" alt="" />
+                  </div>
 
-                <div class="flex flex-col text-center sm:text-left">
-                  <div class="text-lg sm:text-xl font-semibold">
-                    Trader’s guide to Solana
-                  </div>
-                  <div class="flex flex-row">
-                    <!-- <div
-                    class="
-                      ml-3
-                      text-xs
-                      px-2
-                      rounded-sm
-                      bg-white
-                      text-black
-                      py-1
-                    "
-                  >
-                    Coming Soon
-                  </div> -->
-                  </div>
-                  <div class="text-sm">
-                    Like speculating? Learn the best ways to trade crypto on
-                    Solana via this tour
+                  <div class="flex flex-col text-center sm:text-left">
+                    <div class="text-lg sm:text-xl font-semibold">
+                      Trader’s guide to Solana
+                    </div>
+                    <div class="text-sm">
+                      Like speculating? Learn the best ways to trade crypto on
+                      Solana via this tour
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </router-link>
+
             <div
               class="
                 flex flex-col
