@@ -105,16 +105,18 @@ export default {
             <div
               v-if="current != 0"
               class="
-                bg-white
                 px-4
                 py-2
                 rounded-md
                 cursor-pointer
-                text-black
-                font-semibold
-                hover:bg-white/75
+                font-regular
                 w-max
                 mt-8
+                text-white
+                bg-gradient-to-b
+                from-[#8D2457]
+                to-[#721C46]
+                hover:from-[#8D2457]/90 hover:to-[#721C46]/90
               "
               @click="goBack"
             >
@@ -126,19 +128,19 @@ export default {
         <div
           v-if="current != this.navigation.length - 1"
           id="buttons"
-          class="flex flex-row mt-8 gap-8"
+          class="flex flex-row mt-16 gap-4"
         >
           <div
             v-if="current != 0"
             class="
-              bg-white
               px-4
               py-2
               rounded-md
               cursor-pointer
-              text-black
-              font-semibold
-              hover:bg-white/75
+              font-regular
+              text-white
+              bg-[#313131]
+              hover:bg-[#313131]/80
             "
             @click="goBack"
           >
@@ -146,14 +148,16 @@ export default {
           </div>
           <div
             class="
-              bg-white
               px-4
               py-2
               rounded-md
               cursor-pointer
-              text-black
-              font-semibold
-              hover:bg-white/75
+              font-regular
+              text-white
+              bg-gradient-to-b
+              from-[#8D2457]
+              to-[#721C46]
+              hover:from-[#8D2457]/90 hover:to-[#721C46]/90
             "
             @click="goNext"
           >

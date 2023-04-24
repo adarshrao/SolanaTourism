@@ -7,17 +7,18 @@
   <p></p>
   <p>
     If you enjoyed being shown around, I would appreciate a shout-out at
-    <a target="_blank" href="https://twitter.com/adarshrao_">@adarshrao_</a>
+    <a target="_blank" href="https://twitter.com/SolanaTourism">@SolanaTourism</a>
   </p>
 
-  <div class="flex flex-row grid grid-cols-4 space-center">
-    <div class="col-span-2">
+  <p><div class="col-span-2">
       Know somebody that might enjoy this tour? Send it to them.
-    </div>
+    </div></p>
 
-    <div class="p-4 bg-black/30 w-max rounded-md text-white flex align-center">
-      https://solanatourism.com/tour
-    </div>
+  <div class="flex flex-row grid grid-cols-4 space-center">
+    
+  </div>
+  <div class="p-4 bg-black/30 w-max pr-16 rounded-md text-white flex align-center">
+    https://solanatourism.com/tour
   </div>
 </template>
 

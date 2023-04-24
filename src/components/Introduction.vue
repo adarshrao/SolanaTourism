@@ -1234,8 +1234,8 @@
           </p>
           <p>
             If you enjoyed being shown around, I would appreciate a shout-out at
-            <a target="_blank" href="https://twitter.com/adarshrao_"
-              >@adarshrao_</a
+            <a target="_blank" href="https://twitter.com/SolanaTourism"
+              >@SolanaTourism</a
             >
           </p>
 
