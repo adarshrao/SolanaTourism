@@ -77,7 +77,7 @@ export default {
         <div class="flex flex-col text-sm gap-2 mt-2">
           <div class="flex flex-row items-center">
             <img
-              class="w-5 h-max mr-3"
+              class="w-5 h-auto mr-3"
               src="../../assets/icons/link.png"
               alt=""
             />
@@ -87,7 +87,7 @@ export default {
           </div>
           <div class="flex flex-row items-center">
             <img
-              class="w-4 h-max mr-4"
+              class="w-4 h-auto mr-4"
               src="../../assets/icons/calendar.png"
               alt=""
             />
@@ -95,7 +95,7 @@ export default {
           </div>
           <div class="flex flex-row items-center">
             <img
-              class="w-5 h-max mr-3"
+              class="w-5 h-auto mr-3"
               src="../../assets/icons/discord.png"
               alt=""
             />
@@ -103,7 +103,7 @@ export default {
           </div>
           <div class="flex flex-row items-center">
             <img
-              class="w-5 h-max mr-3"
+              class="w-5 h-auto mr-3"
               src="../../assets/icons/twitter.png"
               alt=""
             />

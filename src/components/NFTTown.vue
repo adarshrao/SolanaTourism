@@ -22,10 +22,11 @@
         rounded-xl
         sm:p-12
         overflow-hidden
+        bg-[url('../assets/map5.png')] bg-repeat-x bg-cover
       "
     >
       <!-- bg-[url('../assets/map5.png')] bg-repeat-x bg-cover -->
-      <div class="absolute"><img src="../assets/largeMap1.png" alt="" /></div>
+      <!-- <div class="absolute"><img src="../assets/largeMap1.png" alt="" /></div> -->
       <div class="flex flex-col">
         <div class="text-2xl font-bold pt-4 pl-4 sm:pt-0 sm:pl-0">
           NFT Square
@@ -41,7 +42,16 @@
 
       <div class="relative">
         <router-link to="/tensor">
-          <div class="absolute fixed left-96 flex flex-row">
+          <div
+            class="
+              absolute
+              fixed
+              left-56
+              top-4
+              sm:top-0 sm:left-96
+              flex flex-row
+            "
+          >
             <div class="w-12 mr-2">
               <img src="../assets/tensor.png" alt="" />
             </div>

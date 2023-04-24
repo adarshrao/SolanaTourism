@@ -16,7 +16,7 @@
   </p>
   <p>
     This concept is known as Leverage trading and it allows you to magnify your
-    profts (or losses).
+    profits (or losses).
   </p>
   <p class="text-xl font-semibold mt-8 mb-2 text-[#ebebeb]">
     Quick intro to how it works

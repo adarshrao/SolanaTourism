@@ -15,14 +15,24 @@
           >
             SOLANA TOURISM
           </div>
-          <div class="text-lg sm:text-xl text-white opacity-50 w-96 mt-2">
+          <div
+            class="
+              text-lg
+              sm:text-xl
+              text-white
+              opacity-50
+              mt-2
+              w-auto
+              max-w-md
+            "
+          >
             Curated tour guides introducing you to the best projects on Solana
           </div>
 
           <div class="flex flex-row mt-4 items-center">
             <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
               <img
-                class="w-6 h-max mr-4"
+                class="w-6 h-auto mr-4"
                 src="../assets/icons/discord.png"
                 alt=""
               />
@@ -30,7 +40,7 @@
 
             <a target="_blank" href="https://twitter.com/SolanaTourism">
               <img
-                class="w-6 h-max mr-4"
+                class="w-6 h-auto mr-4"
                 src="../assets/icons/twitter.png"
                 alt=""
               />
@@ -84,7 +94,7 @@
           <div class="text-lg sm:text-2xl font-semibold mb-1">
             A first timer's guide to Solana
           </div>
-          <div class="font-light w-96">
+          <div class="font-light w-auto max-w-sm">
             Experience a guided tour through the best attractions in Solana City
           </div>
 
@@ -342,13 +352,17 @@
           <div class="flex flex-row items-center">
             <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
               <img
-                class="w-5 h-max mr-4"
+                class="w-5 h-auto mr-4"
                 src="../assets/icons/discord.png"
                 alt=""
               />
             </a>
             <a target="_blank" href="https://twitter.com/SolanaTourism">
-              <img class="w-5 h-max" src="../assets/icons/twitter.png" alt="" />
+              <img
+                class="w-5 h-auto"
+                src="../assets/icons/twitter.png"
+                alt=""
+              />
             </a>
           </div>
 

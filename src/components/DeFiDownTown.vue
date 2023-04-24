@@ -39,7 +39,16 @@
 
       <div class="relative">
         <router-link to="/drift">
-          <div class="absolute fixed left-96 flex flex-row">
+          <div
+            class="
+              absolute
+              fixed
+              left-56
+              top-4
+              sm:top-0 sm:left-96
+              flex flex-row
+            "
+          >
             <div class="w-12 mr-2">
               <img src="../assets/logos/drift.png" alt="" />
             </div>
@@ -50,7 +59,17 @@
           </div>
         </router-link>
         <router-link to="/mango">
-          <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
+          <div
+            class="
+              absolute
+              fixed
+              sm:right-96
+              left-8
+              sm:left-16
+              top-32
+              flex flex-row
+            "
+          >
             <div class="w-12 mr-2">
               <img src="../assets/logos/mango.png" alt="" />
             </div>
