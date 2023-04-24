@@ -32,7 +32,7 @@
           <div class="flex flex-row mt-4 items-center">
             <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
               <img
-                class="w-6 h-auto mr-4"
+                class="w-6 h-auto mr-4 opacity-75 hover:opacity-100"
                 src="../assets/icons/discord.png"
                 alt=""
               />
@@ -40,7 +40,7 @@
 
             <a target="_blank" href="https://twitter.com/SolanaTourism">
               <img
-                class="w-6 h-auto mr-4"
+                class="w-6 h-auto mr-4 opacity-75 hover:opacity-100"
                 src="../assets/icons/twitter.png"
                 alt=""
               />
@@ -86,34 +86,40 @@
             text-white
             p-8
             rounded-lg
-            border-2 border-[#6E1E45]
+            border-2 border-[#7E2041]
             pb-12
             overflow-hidden
+            select-none
           "
         >
           <div class="text-lg sm:text-2xl font-semibold mb-1">
             A first timer's guide to Solana
           </div>
-          <div class="font-light w-auto max-w-sm">
+          <div class="font-light w-max max-w-sm">
             Experience a guided tour through the best attractions in Solana City
           </div>
 
-          <div
-            class="
-              bg-white
-              py-1
-              px-4
-              mt-4
-              font-semibold
-              rounded-sm
-              w-max
-              text-black
-            "
-          >
-            <router-link to="/tour"> Begin Tour </router-link>
+          <div class="w-max">
+            <router-link class="w-32" to="/tour">
+              <div
+                class="
+                  bg-[#7E2041]
+                  py-2
+                  px-4
+                  mt-4
+                  font-semibold
+                  rounded
+                  w-max
+                  text-white
+                  hover:bg-[#7E2041]/70
+                "
+              >
+                BEGIN TOUR
+              </div>
+            </router-link>
           </div>
 
-          <div class="relative -top-3 left-32 hidden sm:flex">
+          <div class="relative -top-3 left-32 ml-3 hidden sm:flex">
             <img class="w-5/6" src="../assets/line.png" />
           </div>
 
@@ -174,14 +180,14 @@
             <router-link to="/trading-tour">
               <div
                 class="
-                  border border-gray-800
+                  border border-[#7E2041]
                   px-6
                   py-6
                   rounded-md
                   mt-4
                   text-white
                   cursor-pointer
-                  hover:opacity-80
+                  hover:opacity-50
                 "
               >
                 <div
