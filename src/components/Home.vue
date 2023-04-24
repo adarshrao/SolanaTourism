@@ -20,7 +20,7 @@
               text-lg
               sm:text-xl
               text-white
-              opacity-50
+              opacity-60
               mt-2
               w-auto
               max-w-md
@@ -32,7 +32,7 @@
           <div class="flex flex-row mt-4 items-center">
             <a target="_blank" href="https://discord.gg/RTfaZq6DJ7">
               <img
-                class="w-6 h-auto mr-4 opacity-75 hover:opacity-100"
+                class="w-6 h-auto mr-4 opacity-60 hover:opacity-100"
                 src="../assets/icons/discord.png"
                 alt=""
               />
@@ -40,7 +40,7 @@
 
             <a target="_blank" href="https://twitter.com/SolanaTourism">
               <img
-                class="w-6 h-auto mr-4 opacity-75 hover:opacity-100"
+                class="w-6 h-auto mr-4 opacity-60 hover:opacity-100"
                 src="../assets/icons/twitter.png"
                 alt=""
               />
@@ -85,8 +85,10 @@
             mt-14
             text-white
             p-8
+            pl-12
+            pt-12
             rounded-lg
-            border-2 border-[#7E2041]
+            bg-[#1C1317]
             pb-12
             overflow-hidden
             select-none
@@ -95,7 +97,7 @@
           <div class="text-lg sm:text-2xl font-semibold mb-1">
             A first timer's guide to Solana
           </div>
-          <div class="font-light w-max max-w-sm">
+          <div class="text-sm sm:text-base font-light max-w-sm">
             Experience a guided tour through the best attractions in Solana City
           </div>
 
@@ -103,7 +105,6 @@
             <router-link class="w-32" to="/tour">
               <div
                 class="
-                  bg-[#7E2041]
                   py-2
                   px-4
                   mt-4
@@ -111,7 +112,10 @@
                   rounded
                   w-max
                   text-white
-                  hover:bg-[#7E2041]/70
+                  bg-gradient-to-b
+                  from-[#8D2457]
+                  to-[#721C46]
+                  hover:from-[#8D2457]/90 hover:to-[#721C46]/90
                 "
               >
                 BEGIN TOUR
@@ -171,8 +175,8 @@
           </div>
         </div>
 
-        <div class="flex flex-col mt-3">
-          <div class="text-md sm:text-xl font-semibold text-white mt-4 sm:mt-8">
+        <div class="flex flex-col mt-2">
+          <div class="text-md sm:text-xl font-semibold text-white mt-4 sm:mt-4">
             Coming Soon
           </div>
 
@@ -180,21 +184,21 @@
             <router-link to="/trading-tour">
               <div
                 class="
-                  border border-[#7E2041]
                   px-6
                   py-6
                   rounded-md
                   mt-4
                   text-white
                   cursor-pointer
-                  hover:opacity-50
+                  bg-[#1C1317]
+                  hover:bg-[#1C1317]/80
                 "
               >
                 <div
                   class="flex flex-col sm:flex-row justify-center items-center"
                 >
-                  <div class="w-12 mb-4 sm:mb-0 sm:w-16 h-auto mr-6">
-                    <img src="../assets/traders-guide.png" alt="" />
+                  <div class="w-16 mb-4 sm:mb-0 sm:w-32 h-auto sm:mr-2">
+                    <img src="../assets/traders-guide2.png" alt="" />
                   </div>
 
                   <div class="flex flex-col text-center sm:text-left">
@@ -227,8 +231,8 @@
               <div
                 class="flex flex-col sm:flex-row justify-center items-center"
               >
-                <div class="w-12 mb-4 sm:mb-0 sm:w-16 h-auto mr-6">
-                  <img src="../assets/hustlers-guide.png" alt="" />
+                <div class="w-12 mb-4 sm:mb-0 sm:w-32 h-auto mr-1">
+                  <img src="../assets/hustlers-guide2.png" alt="" />
                 </div>
 
                 <div class="flex flex-col text-center sm:text-left">
@@ -272,7 +276,8 @@
               class="
                 relative
                 flex flex-col
-                bg-gray-800
+                bg-[#1C1317]
+                hover:bg-[#1C1317]/80
                 px-6
                 py-4
                 rounded-md
@@ -299,7 +304,8 @@
               class="
                 relative
                 flex flex-col
-                bg-gray-800
+                bg-[#1C1317]
+                hover:bg-[#1C1317]/80
                 px-6
                 py-4
                 rounded-md
