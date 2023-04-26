@@ -5,7 +5,7 @@
       class="font-bold text-base pt-8 sm:text-lg text-white text-center"
     >
       <router-link to="/">
-        <span> SOLANA TOURISM </span>
+        <span class="text-white"> SOLANA TOURISM </span>
       </router-link>
     </div>
 
@@ -50,6 +50,7 @@
               top-4
               sm:top-0 sm:left-96
               flex flex-row
+              text-white
             "
           >
             <div class="w-12 mr-2">
@@ -62,7 +63,17 @@
           </div>
         </router-link>
         <router-link to="/magiceden">
-          <div class="absolute fixed sm:right-96 left-16 top-32 flex flex-row">
+          <div
+            class="
+              absolute
+              fixed
+              sm:right-96
+              left-16
+              top-32
+              flex flex-row
+              text-white
+            "
+          >
             <div class="w-12 mr-2">
               <img src="../assets/logos/magicEden.png" alt="" />
             </div>
