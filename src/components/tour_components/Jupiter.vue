@@ -3,9 +3,9 @@
 
   <p>
     I actually don't have to ask. I can just search the Solana blockchain with
-    your wallet address to see if you have funded it with money or not.
-    Blockchains are transparent and you can see just how many tokens every
-    wallet contains.
+    your wallet address to see if you have funded it with money or not. Don't
+    worry though, I only have view access. Blockchains are transparent and you
+    can see just how many tokens every wallet contains.
   </p>
 
   <p>

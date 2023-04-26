@@ -2,8 +2,8 @@
   <p>Did you install the wallet?</p>
 
   <p>
-    If not, I would highly recommend going back and doing it. The tour is nicer
-    with it! And you'll be one step further into becoming a citizen on Solana!
+    I would highly recommend going back and doing it. The tour is nicer with it!
+    And you'll be one step further into becoming a citizen on Solana!
   </p>
 
   <div></div>

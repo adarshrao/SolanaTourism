@@ -1,10 +1,10 @@
 <script>
-import Intro from "./tradingTour_components/Intro.vue";
-import Jupiter from "./tradingTour_components/Jupiter.vue";
-import Mango from "./tradingTour_components/Mango.vue";
-import Drift from "./tradingTour_components/Drift.vue";
-import Lifinity from "./tradingTour_components/Lifinity.vue";
-import End from "./tradingTour_components/End.vue";
+import Intro from "./hustleTour_components/Intro.vue";
+import NFTSpeculation from "./hustleTour_components/NFTSpeculation.vue";
+import YieldFarming from "./hustleTour_components/YieldFarming.vue";
+import MEVArbitrage from "./hustleTour_components/MEVArbitrage.vue";
+import TradingCrypto from "./hustleTour_components/TradingCrypto.vue";
+import End from "./hustleTour_components/End.vue";
 
 export default {
   name: "Tour",
@@ -12,21 +12,21 @@ export default {
     return {
       current: 0,
       navigation: [
-        "Welcome to Solana",
-        "Buy Low and Sell High, Jupiter",
-        "Trade with leverage, Mango",
-        "Trade Perpetual Futures, Drift",
-        "Leave trading to a Hedgefund, Lifinity",
+        "Hustler's Guide to Solana",
+        "NFT Speculators",
+        "Yield Farming",
+        "MEV Arbitrage",
+        "Trading Crypto",
         "End of Tour",
       ],
     };
   },
   components: {
     Intro,
-    Jupiter,
-    Mango,
-    Drift,
-    Lifinity,
+    NFTSpeculation,
+    YieldFarming,
+    MEVArbitrage,
+    TradingCrypto,
     End,
   },
   methods: {
@@ -94,10 +94,10 @@ export default {
     >
       <div class="sm:col-span-2 pt-0 p-8 sm:p-12">
         <Intro v-if="current == 0" />
-        <Jupiter v-if="current == 1" />
-        <Mango v-if="current == 2" />
-        <Drift v-if="current == 3" />
-        <Lifinity v-if="current == 4" />
+        <NFTSpeculation v-if="current == 1" />
+        <YieldFarming v-if="current == 2" />
+        <MEVArbitrage v-if="current == 3" />
+        <TradingCrypto v-if="current == 4" />
         <End v-if="current == this.navigation.length - 1" />
 
         <div v-if="current == this.navigation.length - 1">

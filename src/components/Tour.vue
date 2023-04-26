@@ -91,7 +91,7 @@ export default {
       class="font-bold text-lg text-white text-center pt-8"
     >
       <router-link to="/">
-        <span> SOLANA TOURISM</span>
+        <span class="text-white"> SOLANA TOURISM</span>
       </router-link>
     </div>
 

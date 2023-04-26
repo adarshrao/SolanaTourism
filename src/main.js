@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home.vue";
 import Tour from "./components/Tour.vue";
 import TradingTour from "./components/TradingTour.vue";
+import HustleTour from "./components/HustleTour.vue";
 import NFTTown from "./components/NFTTown.vue";
 import DeFiDownTown from "./components/DeFiDownTown.vue";
 import Tensor from "./components/projects/Tensor.vue";
@@ -28,6 +29,10 @@ const router = createRouter({
     {
       path: "/trading-tour",
       component: TradingTour,
+    },
+    {
+      path: "/hustle-tour",
+      component: HustleTour,
     },
     {
       path: "/nft-square",

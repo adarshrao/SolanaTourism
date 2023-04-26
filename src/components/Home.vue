@@ -176,10 +176,6 @@
         </div>
 
         <div class="flex flex-col mt-2">
-          <div class="text-md sm:text-xl font-semibold text-white mt-4 sm:mt-4">
-            Coming Soon
-          </div>
-
           <div class="flex flex-col sm:flex-row gap-2 sm:gap-8">
             <router-link to="/trading-tour">
               <div
@@ -214,34 +210,33 @@
               </div>
             </router-link>
 
-            <div
-              class="
-                flex flex-col
-                border border-gray-800
-                px-6
-                py-6
-                rounded-md
-                mt-4
-                text-white
-                opacity-50
-                cursor-not-allowed
-                hover:opacity-40
-              "
-            >
+            <router-link to="/hustle-tour">
               <div
-                class="flex flex-col sm:flex-row justify-center items-center"
+                class="
+                  px-6
+                  py-6
+                  rounded-md
+                  mt-4
+                  text-white
+                  cursor-pointer
+                  bg-[#1C1317]
+                  hover:bg-[#1C1317]/80
+                "
               >
-                <div class="w-12 mb-4 sm:mb-0 sm:w-32 h-auto mr-1">
-                  <img src="../assets/hustlers-guide2.png" alt="" />
-                </div>
-
-                <div class="flex flex-col text-center sm:text-left">
-                  <div class="text-lg sm:text-xl font-semibold">
-                    Hustler’s guide to Solana
+                <div
+                  class="flex flex-col sm:flex-row justify-center items-center"
+                >
+                  <div class="w-12 mb-4 sm:mb-0 sm:w-32 h-auto mr-1">
+                    <img src="../assets/hustlers-guide2.png" alt="" />
                   </div>
-                  <div class="flex flex-row">
-                    <div class="">
-                      <!-- <div
+
+                  <div class="flex flex-col text-center sm:text-left">
+                    <div class="text-lg sm:text-xl font-semibold">
+                      Hustler’s guide to Solana
+                    </div>
+                    <div class="flex flex-row">
+                      <div class="">
+                        <!-- <div
                       class="
                         ml-3
                         text-xs
@@ -254,15 +249,16 @@
                     >
                       Coming Soon
                     </div> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="text-sm">
-                    Learn some of the ways in which the average citizen on
-                    Solana makes a living
+                    <div class="text-sm">
+                      Learn some of the ways in which citizens of Solana make a
+                      living
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </router-link>
           </div>
         </div>
 
@@ -287,7 +283,7 @@
                 overflow-hidden
               "
             >
-              <router-link to="/defi-downtown">
+              <router-link class="text-white" to="/defi-downtown">
                 <img
                   class="absolute object-fill"
                   src="../assets/shortMap1.png"
@@ -315,7 +311,7 @@
                 overflow-hidden
               "
             >
-              <router-link to="/nft-square">
+              <router-link class="text-white" to="/nft-square">
                 <img
                   class="absolute object-fill"
                   src="../assets/shortMap2.png"
