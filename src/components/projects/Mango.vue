@@ -32,7 +32,7 @@ export default {
       class="font-bold text-lg pt-8 text-white text-center"
     >
       <router-link to="/">
-        <span> SOLANA TOURISM </span>
+        <span class="text-white"> SOLANA TOURISM </span>
       </router-link>
     </div>
 
@@ -55,7 +55,7 @@ export default {
         class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-12 rounded-xl"
       >
         <div class="mb-4">
-          <router-link to="/defi-downtown"
+          <router-link class="text-white" to="/defi-downtown"
             >&lt;- Back to Defi DownTown</router-link
           >
         </div>
@@ -81,11 +81,11 @@ export default {
               src="../../assets/icons/link.png"
               alt=""
             />
-            <a target="_blank" :href="this.websiteLink">
+            <a class="text-white" target="_blank" :href="this.websiteLink">
               {{ this.websiteName }}</a
             >
           </div>
-          <div class="flex flex-row items-center">
+          <div class="text-white flex flex-row items-center op">
             <img
               class="w-4 h-auto mr-4"
               src="../../assets/icons/calendar.png"
@@ -99,7 +99,9 @@ export default {
               src="../../assets/icons/discord.png"
               alt=""
             />
-            <a target="_blank" :href="this.discord"> Discord </a>
+            <a class="text-white" target="_blank" :href="this.discord">
+              Discord
+            </a>
           </div>
           <div class="flex flex-row items-center">
             <img
@@ -107,7 +109,9 @@ export default {
               src="../../assets/icons/twitter.png"
               alt=""
             />
-            <a target="_blank" :href="this.twitter"> Twitter </a>
+            <a class="text-white" target="_blank" :href="this.twitter">
+              Twitter
+            </a>
           </div>
         </div>
       </div>
@@ -130,21 +134,20 @@ export default {
           </p>
 
           <p>
-            Mango Markets is built on the Solana blockchain and utilises Serum
-            DEX for spot margin trading while perpetual futures are traded on
-            Mango Markets' own order book. Mango Markets is governed by MNGO
-            token holders via the Mango DAO.
+            Mango Markets is built on the Solana blockchain and utilises
+            OpenBook DEX for spot margin trading while perpetual futures are
+            traded on Mango Markets' own order book. Mango Markets is governed
+            by MNGO token holders via the Mango DAO.
           </p>
           <p>
-            Mango Markets is completely open source, we see this transparency as
+            Mango Markets is completely open source and see this transparency as
             vital for the project as it increases the amount of people who
             understand and can improve the project. The DAO frequently sponsors
             grants for developers to extend, integrate with or try to break the
-            project. Present your idea on the governance forum if you would like
-            to receive financial support.
+            project.
           </p>
 
-          <div class="text-xl text-white font-semibold">
+          <div class="text-xl text-white font-semibold pt-4">
             Things to do here — Trade Crypto
           </div>
 

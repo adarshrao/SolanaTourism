@@ -4,7 +4,7 @@
   </h2>
   <p>
     NFT Speculation is an active endeavor. Some Solana citizens like to lay back
-    and print money. They known as Yield farmers.
+    and print money. They are known as Yield farmers.
   </p>
   <p>
     Yield farming is a colorful term to describe earning interest on assets.

@@ -27,6 +27,10 @@ a {
   color: #dd3d8b;
 }
 
+a:hover {
+  opacity: 90%;
+}
+
 /* a,
 .green {
   text-decoration: none;

@@ -31,7 +31,7 @@ export default {
       class="font-bold text-lg text-white text-center"
     >
       <router-link to="/">
-        <span> SOLANA TOURISM </span>
+        <span class="text-white"> SOLANA TOURISM </span>
       </router-link>
     </div>
 
@@ -54,7 +54,9 @@ export default {
         class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-12 rounded-xl"
       >
         <div class="mb-4">
-          <router-link to="/nft-square">&lt;- Back to NFT Town</router-link>
+          <router-link class="text-white" to="/nft-square"
+            >&lt;- Back to NFT Town</router-link
+          >
         </div>
 
         <div class="flex flex-row">
@@ -78,11 +80,11 @@ export default {
               src="../../assets/icons/link.png"
               alt=""
             />
-            <a target="_blank" :href="this.websiteLink">
+            <a class="text-white" target="_blank" :href="this.websiteLink">
               {{ this.websiteLink }}</a
             >
           </div>
-          <div class="flex flex-row items-center">
+          <div class="text-white flex flex-row items-center">
             <img
               class="w-4 h-auto mr-4"
               src="../../assets/icons/calendar.png"
@@ -96,7 +98,9 @@ export default {
               src="../../assets/icons/discord.png"
               alt=""
             />
-            <a target="_blank" :href="this.discord"> Discord </a>
+            <a class="text-white" target="_blank" :href="this.discord">
+              Discord
+            </a>
           </div>
           <div class="flex flex-row items-center">
             <img
@@ -104,7 +108,9 @@ export default {
               src="../../assets/icons/twitter.png"
               alt=""
             />
-            <a target="_blank" :href="this.twitter"> Twitter </a>
+            <a class="text-white" target="_blank" :href="this.twitter">
+              Twitter
+            </a>
           </div>
         </div>
       </div>
@@ -114,9 +120,6 @@ export default {
           Tensor, an NFT Marketplace
         </div>
         <div class="flex flex-row gap-4 text-base">
-          <div>
-            guide by <a href="https://twitter.com/adarshrao_">@adarshrao</a>
-          </div>
           <!-- <div class="">TIP</div> -->
         </div>
 

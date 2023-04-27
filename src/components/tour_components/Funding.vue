@@ -56,7 +56,7 @@
   <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
   <div v-if="continueWithoutWallet || connected">
-    <div class="grid grid-cols-2">
+    <div class="sm:grid sm:grid-cols-2">
       <div>
         <p v-if="!connected">
           It's alright if you haven't installed it or were unable to connect.
@@ -88,7 +88,7 @@
       <div>
         <img
           class="my-4 pl-4"
-          src="../../assets/emptyWallet.png"
+          src="../../assets/product/backpackEmpty.png"
           alt="Untitled"
         />
       </div>
@@ -115,17 +115,24 @@
       address.
     </p>
 
-    <p class="italic text-white/60 pb-4">
+    <p class="italic pb-4">
       Don't know anybody like that? Let us help you out! :) Tweet/DM at
-      <a
-        class="text-white/60"
-        target="_blank"
-        href="https://twitter.com/SolanaTourism"
-      >
+      <a target="_blank" href="https://twitter.com/SolanaTourism">
         @SolanaTourism
       </a>
       with your wallet address and we'll be happy to send SOL to get you
       started.
+    </p>
+
+    <div class="text-2xl font-bold mt-4 mb-4 text-white">
+      Tweet to get a 0.001 Sol
+    </div>
+
+    <p>Faucets are websites that send you free SOL.</p>
+
+    <p>
+      Try this one by Stakely —
+      <a href="https://stakely.io/en/faucet/solana-sol"> Click here</a>
     </p>
 
     <div class="text-2xl font-semibold mt-8 text-white">
@@ -154,13 +161,13 @@
       have a couple of other options.
     </p>
 
-    <p>
+    <!-- <p>
       Purchase through Phantom with a credit card (mininum $50).
       <a
         href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option."
         >Here's a link to a guide.</a
       >
-    </p>
+    </p> -->
 
     <p>
       Create an account on an exchange like Coinbase, Kraken and Binance,
@@ -200,11 +207,12 @@ import axios from "axios";
 import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
+  BackpackWalletAdapter,
 } from "@solana/wallet-adapter-wallets";
 import { initWallet, useWallet } from "solana-wallets-vue";
 import { WalletMultiButton } from "solana-wallets-vue";
 
-const wallets = [new PhantomWalletAdapter()];
+const wallets = [new BackpackWalletAdapter()];
 
 initWallet({ wallets, autoConnect: true });
 

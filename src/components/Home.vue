@@ -142,8 +142,8 @@
             "
           >
             <div class="flex flex-col items-center">
-              <img class="w-10" src="../assets/logos/phantom.png" />
-              <div class="text-sm mt-0">Phantom</div>
+              <img class="w-10" src="../assets/logos/backpack.png" />
+              <div class="text-sm mt-0">Backpack</div>
               <div class="text-xs mt-4 text-gray-400">Visa Office</div>
             </div>
 
@@ -163,8 +163,8 @@
               <div class="text-xs mt-4 text-gray-400">Law Enforcement</div>
             </div>
             <div class="flex flex-col items-center">
-              <img class="w-10" src="../assets/logos/magicEden.png" />
-              <div class="text-sm">Magic Eden</div>
+              <img class="w-10" src="../assets/logos/tensor.png" />
+              <div class="text-sm">Tensor</div>
               <div class="text-xs mt-4 text-gray-400">Buy Art</div>
             </div>
             <div class="flex flex-col items-center">

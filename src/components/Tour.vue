@@ -1,11 +1,14 @@
 <script>
 import Phantom from "./tour_components/Phantom.vue";
+import Backpack from "./tour_components/Backpack.vue";
 import Funding from "./tour_components/Funding.vue";
 import Intro from "./tour_components/Intro.vue";
 import Jupiter from "./tour_components/Jupiter.vue";
 import Solend from "./tour_components/Solend.vue";
+import Tribe from "./tour_components/Tribe.vue";
 import Marinade from "./tour_components/Marinade.vue";
 import Magiceden from "./tour_components/Magiceden.vue";
+import Tensor from "./tour_components/Tensor.vue";
 import Frakt from "./tour_components/Frakt.vue";
 import End from "./tour_components/End.vue";
 
@@ -14,35 +17,30 @@ export default {
   data() {
     return {
       current: 0,
-      showIntro: false,
-      showPhantom: false,
-      showFunding: false,
-      showJupiter: false,
-      showSolend: false,
-      showMarinade: false,
-      showMagiceden: false,
-      showFrakt: false,
       navigation: [
         "Welcome to Solana",
-        "Getting your visa, Phantom",
+        "Getting your visa, Backpack",
         "Funding your wallet",
         "Currency Exchange, Jupiter",
         "Bank, Solend",
+        "Find your Tribe, Superteam",
         "Law and Order, Marinade",
-        "Art Marketplace, MagicEden",
+        "Art Marketplace, Tensor",
         "NFT Bank, Frakt",
         "End of Tour",
       ],
+      components: [Intro, Funding, Phantom],
     };
   },
   components: {
     Intro,
     Funding,
-    Phantom,
+    Backpack,
     Jupiter,
     Solend,
+    Tribe,
     Marinade,
-    Magiceden,
+    Tensor,
     Frakt,
     End,
   },
@@ -109,18 +107,19 @@ export default {
         text-lg text-[#999999]
       "
     >
-      <div class="sm:col-span-2 pt-0 p-8 sm:p-12">
+      <div class="sm:col-span-2 pt-0 p-8 sm:p-12 rounded-xl bg-[#1B1B1B]">
         <Intro v-if="current == 0" />
-        <Phantom v-if="current == 1" />
+        <Backpack v-if="current == 1" />
         <Funding v-if="current == 2" />
         <Jupiter v-if="current == 3" />
         <Solend v-if="current == 4" />
-        <Marinade v-if="current == 5" />
-        <Magiceden v-if="current == 6" />
-        <Frakt v-if="current == 7" />
-        <End v-if="current == 8" />
+        <Tribe v-if="current == 5" />
+        <Marinade v-if="current == 6" />
+        <Tensor v-if="current == 7" />
+        <Frakt v-if="current == 8" />
+        <End v-if="current == 9" />
 
-        <div v-if="current == 8">
+        <div v-if="current == this.navigation.length - 1">
           <router-link to="/">
             <div
               v-if="current != 0"
@@ -145,7 +144,11 @@ export default {
           </router-link>
         </div>
 
-        <div v-if="current != 8" id="buttons" class="flex flex-row mt-16 gap-4">
+        <div
+          v-if="current != this.navigation.length - 1"
+          id="buttons"
+          class="flex flex-row mt-16 gap-4"
+        >
           <div
             v-if="current != 0"
             class="
@@ -183,82 +186,28 @@ export default {
       </div>
       <div
         id="Navigation"
-        class="flex flex-col gap-3 text-gray-400 bg-[#181818] p-8"
+        class="flex flex-col gap-3 text-gray-400 p-8 bg-[#181818]"
       >
+        <!-- sm:bg-black sm:pl-8 sm:pt-0 -->
+
         <div class="flex flex-row justify-between sm:hidden">
           <div>
             Stop {{ this.current + 1 }} : {{ this.navigation[this.current] }}
           </div>
-          <!-- <div>Expand</div> -->
 
           <div class="border-b"></div>
         </div>
 
-        <div
-          class="hidden sm:flex sm:flex-col gap-3 text-gray-400 bg-[#181818]"
-        >
+        <div class="hidden sm:flex sm:flex-col gap-3 text-gray-400">
+          <!-- text-base -->
           <div
+            v-for="item in this.navigation"
             class="cursor-pointer hover:opacity-60"
-            @click="teleport(0)"
-            :class="{ class1: current == 0 }"
+            @click="teleport(this.navigation.indexOf(item))"
+            :class="{ class1: current == this.navigation.indexOf(item) }"
+            :key="{ item }"
           >
-            Welcome to Solana
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(1)"
-            :class="{ class1: current == 1 }"
-          >
-            Getting your visa, Phantom
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(2)"
-            :class="{ class1: current == 2 }"
-          >
-            Funding your wallet
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(3)"
-            :class="{ class1: current == 3 }"
-          >
-            Currency Exchange, Jupiter
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(4)"
-            :class="{ class1: current == 4 }"
-          >
-            Bank, Solend
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(5)"
-            :class="{ class1: current == 5 }"
-          >
-            Law and Order, Marinade
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(6)"
-            :class="{ class1: current == 6 }"
-          >
-            Art Marketplace, MagicEden
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(7)"
-            :class="{ class1: current == 7 }"
-          >
-            NFT Bank, Frakt
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(8)"
-            :class="{ class1: current == 8 }"
-          >
-            End of Tour
+            {{ item }}
           </div>
         </div>
       </div>
