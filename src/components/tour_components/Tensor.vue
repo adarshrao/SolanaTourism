@@ -8,7 +8,7 @@
     <a href="https://tensor.trade" target="_blank">
       <img
         class="w-1/5 mb-8 pt-8 pb-2"
-        src="../../assets/tensor_full.png"
+        src="../../assets/logos/tensor_full.png"
         alt="Untitled"
       />
     </a>
