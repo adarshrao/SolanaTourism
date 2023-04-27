@@ -47,8 +47,8 @@
       <div class="text-xs text-gray-400">Law Enforcement</div>
     </div>
     <div class="flex flex-col items-center">
-      <img class="w-10" src="../../assets/logos/magicEden.png" />
-      <div class="text-sm mt-2">Magic Eden</div>
+      <img class="w-10" src="../../assets/logos/tensor.png" />
+      <div class="text-sm mt-2">Tensor</div>
       <div class="text-xs text-gray-400">Buy Art</div>
     </div>
     <div class="flex flex-col items-center">
