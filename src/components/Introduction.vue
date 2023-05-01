@@ -191,7 +191,7 @@
             <p>
               <img
                 class="my-4 pl-4"
-                src="../assets/emptyWallet.png"
+                src="../assets/product/phantomEmpty.png"
                 alt="Untitled"
               />
             </p>
@@ -306,7 +306,7 @@
             <div>
               <img
                 class="my-4 pl-4"
-                src="../assets/emptyWallet.png"
+                src="../assets/product/phantomEmpty.png"
                 alt="Untitled"
               />
             </div>
