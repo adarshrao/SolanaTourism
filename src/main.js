@@ -4,6 +4,7 @@ import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home.vue";
 import Tour from "./components/Tour.vue";
+import F404 from "./components/F404.vue";
 import TradingTour from "./components/TradingTour.vue";
 import HustleTour from "./components/HustleTour.vue";
 import NFTTown from "./components/NFTTown.vue";
@@ -57,6 +58,10 @@ const router = createRouter({
     {
       path: "/magiceden",
       component: Magiceden,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      component: F404,
     },
   ],
 });
