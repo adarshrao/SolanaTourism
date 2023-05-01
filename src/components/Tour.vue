@@ -19,7 +19,7 @@ export default {
       current: 0,
       navigation: [
         "Welcome to Solana",
-        "Getting your visa, Backpack",
+        "Getting your visa, Phantom",
         "Funding your wallet",
         "Currency Exchange, Jupiter",
         "Bank, Solend",
@@ -36,6 +36,7 @@ export default {
     Intro,
     Funding,
     Backpack,
+    Phantom,
     Jupiter,
     Solend,
     Tribe,
@@ -109,7 +110,7 @@ export default {
     >
       <div class="sm:col-span-2 pt-0 p-8 sm:p-12 rounded-xl bg-[#1B1B1B]">
         <Intro v-if="current == 0" />
-        <Backpack v-if="current == 1" />
+        <Phantom v-if="current == 1" />
         <Funding v-if="current == 2" />
         <Jupiter v-if="current == 3" />
         <Solend v-if="current == 4" />

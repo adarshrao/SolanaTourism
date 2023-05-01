@@ -26,8 +26,8 @@
     "
   >
     <div class="flex flex-col items-center">
-      <img class="w-10" src="../../assets/logos/backpack.png" />
-      <div class="text-sm mt-2">Backpack</div>
+      <img class="w-10" src="../../assets/logos/phantom.png" />
+      <div class="text-sm mt-2">Phantom</div>
       <div class="text-xs text-gray-400">Visa Office</div>
     </div>
 

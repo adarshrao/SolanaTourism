@@ -46,8 +46,8 @@
       You’ve just gotten a taste for how you can access any decentralized app
       across the Solana ecosystem. No need to create and remember usernames or
       passwords. Just press
-      <span class="font-bold text-white">Connect</span> on a browser with
-      Phantom wallet installed.
+      <span class="font-bold text-white">Connect</span> on a browser with a
+      Solana wallet installed.
     </p>
 
     <p class="mb-4">Refreshing, isn’t it?</p>
@@ -88,7 +88,7 @@
       <div>
         <img
           class="my-4 pl-4"
-          src="../../assets/product/backpackEmpty.png"
+          src="../../assets/product/phantomEmpty.png"
           alt="Untitled"
         />
       </div>
@@ -161,13 +161,13 @@
       have a couple of other options.
     </p>
 
-    <!-- <p>
+    <p>
       Purchase through Phantom with a credit card (mininum $50).
       <a
         href="https://help.phantom.app/hc/en-us/articles/4406543783571-Where-can-I-buy-Solana-SOL-#:~:text=Firstly%20you%20must%20open%20up,Coinbase%20Pay%20or%20MoonPay%20option."
         >Here's a link to a guide.</a
       >
-    </p> -->
+    </p>
 
     <p>
       Create an account on an exchange like Coinbase, Kraken and Binance,

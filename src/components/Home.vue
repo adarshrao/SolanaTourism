@@ -135,27 +135,33 @@
               flex-row
               text-center
               gap-4
-              sm:gap-6
+              sm:gap-12
               -top-20
               left-72
               h-0
             "
           >
             <div class="flex flex-col items-center">
-              <img class="w-10" src="../assets/logos/backpack.png" />
-              <div class="text-sm mt-0">Backpack</div>
+              <img class="w-10" src="../assets/logos/phantom.png" />
+              <div class="text-sm mt-0">Phantom</div>
               <div class="text-xs mt-4 text-gray-400">Visa Office</div>
             </div>
 
             <div class="flex flex-col items-center">
               <img class="w-10" src="../assets/logos/jupiter.png" />
               <div class="text-sm">Jupiter</div>
-              <div class="text-xs mt-4 text-gray-400">Currency Exchange</div>
+              <div class="text-xs mt-4 text-gray-400">
+                Currency <br />
+                Exchange
+              </div>
             </div>
             <div class="flex flex-col items-center">
               <img class="w-10" src="../assets/logos/solend.png" />
               <div class="text-sm">Solend</div>
-              <div class="text-xs mt-4 text-gray-400">Decentralized Bank</div>
+              <div class="text-xs mt-4 text-gray-400">
+                Decentralized <br />
+                Bank
+              </div>
             </div>
             <div class="flex flex-col items-center">
               <img class="w-10" src="../assets/logos/marinade.png" />
