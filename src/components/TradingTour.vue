@@ -16,7 +16,6 @@ export default {
         "Buy Low and Sell High, Jupiter",
         "Trade with leverage, Mango",
         "Trade Perpetual Futures, Drift",
-        "Leave trading to a Hedgefund, Lifinity",
         "End of Tour",
       ],
     };
@@ -97,7 +96,7 @@ export default {
         <Jupiter v-if="current == 1" />
         <Mango v-if="current == 2" />
         <Drift v-if="current == 3" />
-        <Lifinity v-if="current == 4" />
+        <!-- <Lifinity v-if="current == 4" /> -->
         <End v-if="current == this.navigation.length - 1" />
 
         <div v-if="current == this.navigation.length - 1">
@@ -215,13 +214,6 @@ export default {
             :class="{ class1: current == 4 }"
           >
             {{ this.navigation[4] }}
-          </div>
-          <div
-            class="cursor-pointer hover:opacity-60"
-            @click="teleport(5)"
-            :class="{ class1: current == 5 }"
-          >
-            {{ this.navigation[5] }}
           </div>
         </div>
       </div>
