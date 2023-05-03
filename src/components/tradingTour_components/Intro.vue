@@ -27,6 +27,25 @@
   <p class="text-white font-semibold">
     What are your options to make a quick buck?
   </p>
+
+  <div class="flex flex-row text-center gap-8 py-4 flex-wrap sm:justify-left">
+    <div class="flex flex-col items-center">
+      <img class="w-10" src="../../assets/logos/jupiter.png" />
+      <div class="text-sm mt-3">Jupiter</div>
+      <div class="text-xs mt-1 text-gray-400">Set Limit Orders</div>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <img class="w-10" src="../../assets/logos/mango.png" />
+      <div class="text-sm mt-3">Mango</div>
+      <div class="text-xs mt-1 text-gray-400">Trade with Leverage</div>
+    </div>
+    <div class="flex flex-col items-center">
+      <img class="w-8" src="../../assets/logos/drift.png" />
+      <div class="text-sm mt-3">Drift</div>
+      <div class="text-xs mt-1 text-gray-400">Trade Perpetual Futures</div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
