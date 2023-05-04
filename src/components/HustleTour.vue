@@ -65,7 +65,7 @@ export default {
         },
         {
           name: "twitter:card",
-          content: "summary_large_image2",
+          content: "summary_large_image",
         },
         {
           name: "twitter:title",

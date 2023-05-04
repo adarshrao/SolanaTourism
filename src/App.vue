@@ -36,7 +36,7 @@ export default {
         },
         {
           name: "twitter:card",
-          content: "summary_large_image2",
+          content: "summary_large_image",
         },
         {
           name: "twitter:title",
@@ -51,11 +51,11 @@ export default {
           content: this.description,
         },
         {
-          name: "og:title",
+          property: "og:title",
           content: this.title,
         },
         {
-          name: "og:description",
+          property: "og:description",
           content: this.description,
         },
       ],
