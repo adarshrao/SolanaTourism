@@ -96,11 +96,11 @@ export default {
           content: this.description,
         },
         {
-          name: "og:title",
+          property: "og:title",
           content: this.title,
         },
         {
-          name: "og:description",
+          property: "og:description",
           content: this.description,
         },
       ],
