@@ -2,17 +2,55 @@
 export default {
   name: "mapProject",
   data() {
+    let projectName = "Mango";
     return {
-      name: "Mango",
+      name: projectName,
       oneLiner: "Margin Trading",
       logo: "mango.png",
-      description:
-        "A single venue to lend, borrow, swap, and leverage-trade crypto assets",
+      projectDescription:
+        "A single venue to lend, borrow, swap, and leverage-trpade crypto assets",
       websiteLink: "https://mango.markets",
       websiteName: "mango.markets",
       launchDate: "2021",
       discord: "https://discord.gg/2uwjsBc5yw",
       twitter: "https://twitter.com/mangomarkets",
+      title: `First timer's Guide to ${projectName}  • Solana Tourism`,
+      description: `New to Solana? Here's a guide to getting started with ${projectName}`,
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: "description",
+          content: this.description,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image2",
+        },
+        {
+          name: "twitter:title",
+          content: this.title,
+        },
+        {
+          name: "twitter:creator",
+          content: "@SolanaTourism",
+        },
+        {
+          name: "twitter:description",
+          content: this.description,
+        },
+        {
+          name: "og:title",
+          content: this.title,
+        },
+        {
+          name: "og:description",
+          content: this.description,
+        },
+      ],
     };
   },
 };
@@ -71,7 +109,7 @@ export default {
         </div>
 
         <div class="text-sm">
-          {{ this.description }}
+          {{ this.projectDescription }}
         </div>
 
         <div class="flex flex-col text-sm gap-2 mt-2">

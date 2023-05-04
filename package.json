@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "@solana/wallet-adapter-wallets": "^0.19.11",
+    "@unhead/vue": "^1.1.26",
     "axios": "^0.21.4",
     "marked": "^4.2.12",
     "solana-wallets-vue": "^0.5.2",
     "vue": "^3.2.45",
+    "vue-meta": "^3.0.0-alpha.10",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

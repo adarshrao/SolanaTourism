@@ -18,6 +18,9 @@ export default {
         "Trade Perpetual Futures, Drift",
         "End of Tour",
       ],
+      title: "Trader's Guide to Solana • Solana Tourism",
+      description:
+        "Like speculating? Learn the best ways to trade crypto on Solana",
     };
   },
   components: {
@@ -50,6 +53,41 @@ export default {
     teleport(x) {
       this.current = x;
     },
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: "description",
+          content: this.description,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image2",
+        },
+        {
+          name: "twitter:title",
+          content: this.title,
+        },
+        {
+          name: "twitter:creator",
+          content: "@SolanaTourism",
+        },
+        {
+          name: "twitter:description",
+          content: this.description,
+        },
+        {
+          name: "og:title",
+          content: this.title,
+        },
+        {
+          name: "og:description",
+          content: this.description,
+        },
+      ],
+    };
   },
 };
 </script>

@@ -1,7 +1,13 @@
 import { createApp } from "vue";
+
+// import Vue from "vue";
 import App from "./App.vue";
+// import { createMetaManager } from "vue-meta";
+
+import { createHead, VueHeadMixin } from "@unhead/vue";
 
 import { createRouter, createWebHistory } from "vue-router";
+
 import Home from "./components/Home.vue";
 import Tour from "./components/Tour.vue";
 import F404 from "./components/F404.vue";
@@ -66,4 +72,6 @@ const router = createRouter({
   ],
 });
 
-createApp(App).use(router).mount("#app");
+const head = createHead();
+
+createApp(App).mixin(VueHeadMixin).use(head).use(router).mount("#app");

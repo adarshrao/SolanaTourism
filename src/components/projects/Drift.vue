@@ -2,16 +2,54 @@
 export default {
   name: "mapProject",
   data() {
+    let projectName = "Drift";
     return {
-      name: "Drift",
+      name: projectName,
       oneLiner: "On-Chain Perpetual & Spot Trading with Leverage",
       logo: "drift.png",
-      description:
+      projectDescription:
         "Drift is a decentralized trading platform giving you more leverage on your capital.",
       websiteLink: "https://www.drift.trade/",
       launchDate: "2021",
       discord: "https://discord.com/invite/fMcZBH8ErM",
       twitter: "https://twitter.com/driftprotocol",
+      title: `First timer's Guide to ${projectName}  • Solana Tourism`,
+      description: `New to Solana? Here's a guide to getting started with ${projectName}`,
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: "description",
+          content: this.description,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image2",
+        },
+        {
+          name: "twitter:title",
+          content: this.title,
+        },
+        {
+          name: "twitter:creator",
+          content: "@SolanaTourism",
+        },
+        {
+          name: "twitter:description",
+          content: this.description,
+        },
+        {
+          name: "og:title",
+          content: this.title,
+        },
+        {
+          name: "og:description",
+          content: this.description,
+        },
+      ],
     };
   },
 };
@@ -70,7 +108,7 @@ export default {
         </div>
 
         <div class="text-sm">
-          {{ this.description }}
+          {{ this.projectDescription }}
         </div>
 
         <div class="flex flex-col text-sm gap-2 mt-2">
