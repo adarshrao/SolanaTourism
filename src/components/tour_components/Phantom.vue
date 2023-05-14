@@ -10,12 +10,18 @@
 
     <!-- <div class="text-3xl font-bold pt-12">1 — Phantom</div> -->
     <p>
+
+      <p class="pt-8">There are several wallet providers <a target="_blank" href="https://www.backpack.app/downloads">Backpack</a>, <a target="_blank" href="https://glow.app/">Glow</a>, <a target="_blank" href="https://solflare.com/">Solflare</a> but the one we're going to use in this tour is called — </p>
+
+      <a target="_blank" href="https://phantom.app/">
       <img
-        class="w-3/4 sm:w-2/5 my-4 pt-8 pb-4"
+        class="w-3/4 sm:w-2/5 my-4 pt-4 pb-4"
         src="../../assets/phantom2.png"
         alt="Untitled"
       />
+      </a>
     </p>
+    
     <p>
       Phantom lets you to create a Solana wallet that you will need as we make
       our way through the day’s itinerary. Creating a wallet is free, easy and
@@ -36,42 +42,45 @@
     </p>
     <ul class="list-decimal ml-4">
       <li>
-        <div class="text-md font-bold text-white">Public Key</div>
+        <div class="text-md font-bold text-white mt-8">Public Key</div>
+        <p>
+            Think of this as your account address, your username, your identity. You can share this with other people.
+          </p>
         <ul class="list-disc ml-4">
+        
           <li>
             These are 44 characters long and consist of a mix of letters and
             numbers. Examples —
             <ul class="list-disc mb-4">
-              <li class="list-none ml-6">
+              <li class="list-none ml-6 break-words text-gray-500">
                 HGdKP7AE47NWePzoZp4xjKCdhZS7VtAwBm78h3i7CTVc
               </li>
-              <li class="list-none ml-6">
+              <li class="list-none ml-6 break-words text-gray-500">
                 9jpuPgge8TyoAS66gf58F8St24SB1j2fFc1ag7HRhbox
               </li>
             </ul>
           </li>
-          <li>
-            Think of this as your username, your identity. You can share this
-            with other people.
-          </li>
+          
         </ul>
       </li>
       <li>
-        <div class="text-md font-bold mt-4 text-white">Private Key</div>
+        <div class="text-md font-bold mt-8 text-white">Private Key</div>
+        <p>Think of this as the password to your public key. <span class="text-red-600">You should never share your private key with any one.</span> Any one with your private key can access the corresponding account and take transactions on your behalf. </p>
+
+            <p>This can take two forms.</p>
         <ul>
-          <li class="">
-            A set of 12 words. Example —
+          <li class="">            
             <ul>
-              <li class="list-disc ml-4">
-                Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
-                Flume Tonic
+              <li class="list-disc ml-4"> 
+               <span class="text-white">A set of 12 words that are easy to remember </span> Eg: <span class="text-gray-500">Blunt Wrist Spicy Glaze Hiker Plume Lusty Caper Grasp Prawn
+                Flume Tonic</span>
+              </li>
+              <li class="list-disc ml-4"> 
+               <span class="text-white">A long string of letters and numbers</span> Eg: <span class="text-gray-500 break-words">2TQ6DjMnB4tnmBJABJS81ay6Av6BkEUN71nr6z28goyVLhR5wiUpChp28oUd8puV6RRPVaem6H3Mop4r8ozqz5fRw</span>
               </li>
             </ul>
           </li>
-          <li class="my-4">
-            Think of this as your password. It signifies that you're the owner
-            of the above public key.
-          </li>
+
         </ul>
       </li>
     </ul>

@@ -13,7 +13,7 @@
     might need to refresh the page to get it to work.
   </p>
 
-  <div class="flex flex-row">
+  <div class="flex flex-col mt-6 gap-4 sm:gap-0 sm:flex-row">
     <wallet-multi-button></wallet-multi-button>
 
     <div
@@ -22,14 +22,16 @@
         border border-gray-600
         py-3
         px-4
-        ml-4
+        sm:ml-4
         rounded-lg
         text-white
         place-center
-        text-sm
+        text-base
         font-semibold
         cursor-pointer
         hover:opacity-60
+        text-center
+        w-max
       "
       @click="showRemainingContent"
     >
@@ -124,21 +126,6 @@
       started.
     </p>
 
-    <div class="text-2xl font-bold mt-4 mb-4 text-white">
-      Tweet to get a 0.001 Sol
-    </div>
-
-    <p>Faucets are websites that send you free SOL.</p>
-
-    <p>
-      Try this one by Stakely —
-      <a href="https://stakely.io/en/faucet/solana-sol"> Click here</a>
-    </p>
-
-    <div class="text-2xl font-semibold mt-8 text-white">
-      Don't mind spending $?
-    </div>
-
     <!-- <p>If you are the first 1000 people reading this guide —</p>
       <ul class="list-decimal ml-4">
         <li>
@@ -156,6 +143,11 @@
           </ul>
         </li>
       </ul> -->
+
+    <div class="text-2xl font-semibold mt-8 text-white">
+      Don't mind spending $?
+    </div>
+
     <p class="mb-16">
       If neither of the above options work for you, fret not because you still
       have a couple of other options.
@@ -185,6 +177,36 @@
       city and never leaving the cab taking you around. The buildings are pretty
       from the outside but …. you’ve come this far might as well go inside.
     </p>
+
+    <div class="border-b border-slate-500 mb-8 mt-8"></div>
+
+    <p class="pb-4">Looking for a cheaper way to get started?</p>
+
+    <div class="text-2xl font-bold mt-4 mb-4 text-white">
+      Get a teeny amount of Sol via a Faucet
+    </div>
+
+    <p>Faucets are websites that send you some SOL for free</p>
+
+    <div class="text-lg font-semibold mt-8 text-white">Stakely Faucet</div>
+
+    <p>
+      <a href="https://stakely.io/en/faucet/solana-sol">
+        This Faucet by Stakely</a
+      >
+      makes you send a tweet in return for a tiny bit of Sol —
+    </p>
+
+    <!-- <div class="text-lg font-semibold mt-8 text-white">Sol Faucet by Umang</div>
+
+    <p>
+      <a target="_blank" href="https://solfaucet.fun/">This Faucet</a> by Umang
+      gives Sol to fresh accounts on Solana
+    </p>
+
+    <div>
+      <img class="my-4" src="../../assets/SolFaucet.png" alt="Untitled" />
+    </div> -->
 
     <div class="border-b border-slate-500 mb-8 mt-8"></div>
 
