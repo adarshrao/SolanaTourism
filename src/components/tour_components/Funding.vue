@@ -98,10 +98,47 @@
 
     <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
-    <p class="mb-4">
-      To get the most out of today’s tour, I recommend having 0.05 SOL ~= ${{
-        (0.05 * solPrice).toFixed(2)
-      }}
+    <p>Lets get you started with a teeny bit of Sol.</p>
+
+    <div class="text-2xl font-bold mt-4 mb-4 text-white">
+      Get a teeny amount of Sol via a Faucet
+    </div>
+
+    <p>Faucets are websites that send you some SOL for free</p>
+
+    <!-- <div class="text-lg font-semibold mt-8 text-white">Stakely Faucet</div>
+
+    <p>
+      <a href="https://stakely.io/en/faucet/solana-sol">
+        This Faucet by Stakely</a
+      >
+      makes you send a tweet in return for a tiny bit of Sol —
+    </p> -->
+
+    <!-- <div class="text-lg font-semibold mt-8 text-white">Sol Faucet</div> -->
+
+    <p>
+      <a target="_blank" href="https://solfaucet.fun/">Sol Faucet</a> made by
+      <a target="_blank" href="https://twitter.com/umang_veerma">Umang</a>
+      sends 0.00089 Sol to new accounts on Solana so that they can start making
+      transaction. All you have to do is go to the website and paste your public
+      wallet address into the field there!
+    </p>
+
+    <div>
+      <img class="my-4" src="../../assets/SolFaucet.png" alt="Untitled" />
+    </div>
+
+    <p class="pt-4">
+      If it worked, congratulations on owning your first tiny bit of Sol. You
+      can now send transactions on Solana!
+    </p>
+
+    <div class="border-b border-slate-500 mb-12 mt-8"></div>
+
+    <p class="mb-4 pt-4">
+      If you'd like to get the most out of today’s tour, I recommend having 0.05
+      SOL ~= ${{ (0.05 * solPrice).toFixed(2) }}
     </p>
 
     <div class="text-2xl font-bold mt-8 mb-4 text-white">
@@ -180,35 +217,9 @@
 
     <div class="border-b border-slate-500 mb-8 mt-8"></div>
 
-    <p class="pb-4">Looking for a cheaper way to get started?</p>
+    <!-- <p class="pb-4">Looking for a cheaper way to get started?</p>
 
-    <div class="text-2xl font-bold mt-4 mb-4 text-white">
-      Get a teeny amount of Sol via a Faucet
-    </div>
-
-    <p>Faucets are websites that send you some SOL for free</p>
-
-    <div class="text-lg font-semibold mt-8 text-white">Stakely Faucet</div>
-
-    <p>
-      <a href="https://stakely.io/en/faucet/solana-sol">
-        This Faucet by Stakely</a
-      >
-      makes you send a tweet in return for a tiny bit of Sol —
-    </p>
-
-    <!-- <div class="text-lg font-semibold mt-8 text-white">Sol Faucet by Umang</div>
-
-    <p>
-      <a target="_blank" href="https://solfaucet.fun/">This Faucet</a> by Umang
-      gives Sol to fresh accounts on Solana
-    </p>
-
-    <div>
-      <img class="my-4" src="../../assets/SolFaucet.png" alt="Untitled" />
-    </div> -->
-
-    <div class="border-b border-slate-500 mb-8 mt-8"></div>
+    <div class="border-b border-slate-500 mb-8 mt-8"></div> -->
 
     <p>
       Once you've funded your wallet (or chosen not to), click below to move on.

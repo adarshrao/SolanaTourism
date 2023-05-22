@@ -8,13 +8,110 @@
     can see just how many tokens every wallet contains.
   </p>
 
+  <div
+    class="text-2xl mt-8 font-semibold text-[#ebebeb]"
+    id="tokens-currencies-what"
+  >
+    What is a blockchain and why is it transparent?
+  </div>
+
   <p>
-    Websites that let you explore blockchains are called blockchain explorers
-    and Solscan is one of them.
+    At its simplest, a blockchain consists of just one table, a list of accounts
+    and how many tokens each account has.
+  </p>
+
+  <div class="border-b my-8 border-white/20"></div>
+
+  <table class="text-left mt-2 mb-4 border-separate border-spacing-x-6 -ml-6">
+    <tr>
+      <th>Account</th>
+      <th>Tokens</th>
+    </tr>
+    <tr class="mr-8">
+      <td>A</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <div class="border-b my-8 border-white/20"></div>
+
+  <p>
+    Whenever, an account sends tokens to another account, it is recorded as a
+    'transaction'. Lets say A sends B 20 tokens. This information is recorded in
+    a 'block' and the table values are updated.
+  </p>
+
+  <p>Block 1 : A sent B 20 tokens</p>
+  <p></p>
+
+  <table class="text-left mt-2 mb-4 border-separate border-spacing-x-6 -ml-6">
+    <tr>
+      <th>Account</th>
+      <th>Tokens</th>
+    </tr>
+    <tr class="mr-8">
+      <td>A</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <div class="border-b my-8 border-white/20"></div>
+
+  <p>Lets say A sends another 30 tokens to B</p>
+
+  <p>
+    Block 2 : A sent B 30 tokens <br />
+    Block 1 : A sent B 20 tokens
+  </p>
+  <p></p>
+
+  <table class="text-left mt-2 mb-4 border-separate border-spacing-x-6 -ml-6">
+    <tr>
+      <th>Account</th>
+      <th>Tokens</th>
+    </tr>
+    <tr class="mr-8">
+      <td>A</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <div class="border-b my-8 border-white/20"></div>
+
+  <p>
+    In a blockchain, not only is the latest balance stored but so are all the
+    blocks. Forever. So given the current state of the table and all the
+    historical transactions that have taken place, you can actually figure out
+    how much money each wallet had at any point in the post.
   </p>
 
   <p>
-    For example, just visit
+    Websites that let you explore blockchains are called blockchain explorers
+    and Solscan is one of them. For example, just visit
     <a
       href="https://solscan.io/account/AhFjTUE2DgNFnAfRtFLUmLTLYyhxzz7j1cvKbvP18tg9"
     >
@@ -23,10 +120,13 @@
     to find out how many tokens the wallet AhFj....8tg9 has
   </p>
 
+  <p></p>
+
   <div class="border-b my-8 border-white/20"></div>
 
   <p>
-    Regardless, lets hit up the local Currency Exchange market and understand a
+    Thankfully you don't need to understand everything fully to use a
+    blockchain. Let's hit up the local Currency Exchange market and understand a
     little more about what other currencies exist on Solana.
   </p>
 
