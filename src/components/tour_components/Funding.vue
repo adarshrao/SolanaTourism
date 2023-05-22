@@ -118,11 +118,11 @@
     <!-- <div class="text-lg font-semibold mt-8 text-white">Sol Faucet</div> -->
 
     <p>
-      <a target="_blank" href="https://solfaucet.fun/">Sol Faucet</a> made by
-      <a target="_blank" href="https://twitter.com/umang_veerma">Umang</a>
+      <a target="_blank" href="https://solfaucet.fun/">Sol Faucet</a> powered by
+      <a target="_blank" href="https://twitter.com/candypayfun">CandyPay</a>
       sends 0.00089 Sol to new accounts on Solana so that they can start making
-      transaction. All you have to do is go to the website and paste your public
-      wallet address into the field there!
+      transactions. All you have to do is go to the website and paste your
+      public wallet address into the field there!
     </p>
 
     <div>
@@ -130,13 +130,13 @@
     </div>
 
     <p class="pt-4">
-      If it worked, congratulations on owning your first tiny bit of Sol. You
-      can now send transactions on Solana!
+      If it worked, congratulations on owning your bit of Sol. You can now send
+      transactions on Solana!
     </p>
 
     <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
-    <p class="mb-4 pt-4">
+    <p class="mb-4 pt-1">
       If you'd like to get the most out of today’s tour, I recommend having 0.05
       SOL ~= ${{ (0.05 * solPrice).toFixed(2) }}
     </p>
