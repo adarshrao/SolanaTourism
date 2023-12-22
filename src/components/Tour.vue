@@ -26,7 +26,7 @@ export default {
         "Find your Tribe, Superteam",
         "Law and Order, Marinade",
         "Art Marketplace, Tensor",
-        "NFT Bank, Frakt",
+        // "NFT Bank, Frakt",
         "End of Tour",
       ],
       components: [Intro, Funding, Phantom],
@@ -45,7 +45,7 @@ export default {
     Tribe,
     Marinade,
     Tensor,
-    Frakt,
+    // Frakt,
     End,
   },
   methods: {
@@ -109,16 +109,12 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .class1 {
   color: white;
   opacity: 100%;
 }
 </style>
-
-
-
 
 <template>
   <div class="min-h-screen h-full w-screen bg-black sm:p-8">
@@ -133,18 +129,7 @@ export default {
     </div>
 
     <div
-      class="
-        bg-[#1B1B1B]
-        w-100vw
-        sm:max-w-7xl sm:mx-auto sm:mt-16
-        h-auto
-        text-white
-        flex flex-col-reverse
-        mt-4
-        sm:grid sm:grid-cols-3
-        rounded-xl
-        text-lg text-[#999999]
-      "
+      class="bg-[#1B1B1B] w-100vw sm:max-w-7xl sm:mx-auto sm:mt-16 h-auto text-white flex flex-col-reverse mt-4 sm:grid sm:grid-cols-3 rounded-xl text-lg text-[#999999]"
     >
       <div class="sm:col-span-2 pt-0 p-8 sm:p-12 rounded-xl bg-[#1B1B1B]">
         <Intro v-if="current == 0" />
@@ -155,27 +140,14 @@ export default {
         <Tribe v-if="current == 5" />
         <Marinade v-if="current == 6" />
         <Tensor v-if="current == 7" />
-        <Frakt v-if="current == 8" />
-        <End v-if="current == 9" />
+        <!-- <Frakt v-if="current == 8" /> -->
+        <End v-if="current == 8" />
 
         <div v-if="current == this.navigation.length - 1">
           <router-link to="/">
             <div
               v-if="current != 0"
-              class="
-                px-4
-                py-2
-                rounded-md
-                cursor-pointer
-                font-regular
-                w-max
-                mt-8
-                text-white
-                bg-gradient-to-b
-                from-[#8D2457]
-                to-[#721C46]
-                hover:from-[#8D2457]/90 hover:to-[#721C46]/90
-              "
+              class="px-4 py-2 rounded-md cursor-pointer font-regular w-max mt-8 text-white bg-gradient-to-b from-[#8D2457] to-[#721C46] hover:from-[#8D2457]/90 hover:to-[#721C46]/90"
               @click="goBack"
             >
               End Tour
@@ -190,33 +162,13 @@ export default {
         >
           <div
             v-if="current != 0"
-            class="
-              px-4
-              py-2
-              rounded-md
-              cursor-pointer
-              font-regular
-              text-white
-              bg-[#313131]
-              hover:bg-[#313131]/80
-            "
+            class="px-4 py-2 rounded-md cursor-pointer font-regular text-white bg-[#313131] hover:bg-[#313131]/80"
             @click="goBack"
           >
             &lt;- Back
           </div>
           <div
-            class="
-              px-4
-              py-2
-              rounded-md
-              cursor-pointer
-              font-regular
-              text-white
-              bg-gradient-to-b
-              from-[#8D2457]
-              to-[#721C46]
-              hover:from-[#8D2457]/90 hover:to-[#721C46]/90
-            "
+            class="px-4 py-2 rounded-md cursor-pointer font-regular text-white bg-gradient-to-b from-[#8D2457] to-[#721C46] hover:from-[#8D2457]/90 hover:to-[#721C46]/90"
             @click="goNext"
           >
             Continue Tour ->
@@ -253,7 +205,6 @@ export default {
     </div>
   </div>
 </template>
-
 
 <style scoped>
 p {

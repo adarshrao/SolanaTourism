@@ -9,6 +9,7 @@ import { createHead, VueHeadMixin } from "@unhead/vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "./components/Home.vue";
+import Spend from "./components/Spend.vue";
 import Tour from "./components/Tour.vue";
 import F404 from "./components/F404.vue";
 import TradingTour from "./components/TradingTour.vue";
@@ -28,6 +29,10 @@ const router = createRouter({
     {
       path: "/",
       component: Home,
+    },
+    {
+      path: "/spend",
+      component: Spend,
     },
     {
       path: "/tour",

@@ -4,27 +4,12 @@
       <div class="flex flex-col sm:flex-row sm:justify-between col-start-2">
         <div id="heroSection">
           <div
-            class="
-              text-white
-              mx-auto
-              w-full
-              text-4xl
-              sm:text-6xl sm:mt-24
-              font-bold
-            "
+            class="text-white mx-auto w-full text-4xl sm:text-6xl sm:mt-24 font-bold"
           >
             SOLANA TOURISM
           </div>
           <div
-            class="
-              text-lg
-              sm:text-xl
-              text-white
-              opacity-60
-              mt-2
-              w-auto
-              max-w-md
-            "
+            class="text-lg sm:text-xl text-white opacity-60 mt-2 w-auto max-w-md"
           >
             Curated tour guides introducing you to the best projects on Solana
           </div>
@@ -49,15 +34,7 @@
         </div>
 
         <div
-          class="
-            flex flex-col
-            justify-center
-            sm:gap-4
-            text-gray-500
-            hidden
-            sm:flex sm:text-right
-            mt-8
-          "
+          class="flex flex-col justify-center sm:gap-4 text-gray-500 hidden sm:flex sm:text-right mt-8"
         >
           <div class="flex flex-col">
             <span class="text-white font-semibold">Solana City Census</span>
@@ -81,18 +58,7 @@
       <div class="col-start-2 relative">
         <div
           id="guide"
-          class="
-            mt-14
-            text-white
-            p-8
-            pl-12
-            pt-12
-            rounded-lg
-            bg-[#1C1317]
-            pb-12
-            overflow-hidden
-            select-none
-          "
+          class="mt-14 text-white p-8 pl-12 pt-12 rounded-lg bg-[#1C1317] pb-12 overflow-hidden select-none"
         >
           <div class="text-lg sm:text-2xl font-semibold mb-1">
             A first timer's guide to Solana
@@ -104,19 +70,7 @@
           <div class="w-max">
             <router-link class="w-32" to="/tour">
               <div
-                class="
-                  py-2
-                  px-4
-                  mt-4
-                  font-semibold
-                  rounded
-                  w-max
-                  text-white
-                  bg-gradient-to-b
-                  from-[#8D2457]
-                  to-[#721C46]
-                  hover:from-[#8D2457]/90 hover:to-[#721C46]/90
-                "
+                class="py-2 px-4 mt-4 font-semibold rounded w-max text-white bg-gradient-to-b from-[#8D2457] to-[#721C46] hover:from-[#8D2457]/90 hover:to-[#721C46]/90"
               >
                 BEGIN TOUR
               </div>
@@ -128,18 +82,7 @@
           </div>
 
           <div
-            class="
-              relative
-              hidden
-              sm:flex
-              flex-row
-              text-center
-              gap-4
-              sm:gap-12
-              -top-20
-              left-72
-              h-0
-            "
+            class="relative hidden sm:flex flex-row text-center gap-4 sm:gap-12 -top-20 left-72 h-0"
           >
             <div class="flex flex-col items-center">
               <img class="w-10" src="../assets/logos/phantom.png" />
@@ -173,11 +116,11 @@
               <div class="text-sm">Tensor</div>
               <div class="text-xs mt-4 text-gray-400">Buy Art</div>
             </div>
-            <div class="flex flex-col items-center">
+            <!-- <div class="flex flex-col items-center">
               <img class="w-10" src="../assets/logos/frakt.png" />
               <div class="text-sm">Frakt</div>
               <div class="text-xs mt-4 text-gray-400">Mortgage Art</div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -185,16 +128,7 @@
           <div class="flex flex-col sm:flex-row gap-2 sm:gap-8">
             <router-link to="/trading-tour">
               <div
-                class="
-                  px-6
-                  py-6
-                  rounded-md
-                  mt-4
-                  text-white
-                  cursor-pointer
-                  bg-[#1C1317]
-                  hover:bg-[#1C1317]/80
-                "
+                class="px-6 py-6 rounded-md mt-4 text-white cursor-pointer bg-[#1C1317] hover:bg-[#1C1317]/80"
               >
                 <div
                   class="flex flex-col sm:flex-row justify-center items-center"
@@ -218,16 +152,7 @@
 
             <router-link to="/hustle-tour">
               <div
-                class="
-                  px-6
-                  py-6
-                  rounded-md
-                  mt-4
-                  text-white
-                  cursor-pointer
-                  bg-[#1C1317]
-                  hover:bg-[#1C1317]/80
-                "
+                class="px-6 py-6 rounded-md mt-4 text-white cursor-pointer bg-[#1C1317] hover:bg-[#1C1317]/80"
               >
                 <div
                   class="flex flex-col sm:flex-row justify-center items-center"
@@ -266,6 +191,28 @@
               </div>
             </router-link>
           </div>
+          <router-link to="/spend">
+            <div
+              class="px-6 py-6 rounded-md mt-4 text-white cursor-pointer bg-[#1C1317] hover:bg-[#1C1317]/80"
+            >
+              <div
+                class="flex flex-col sm:flex-row justify-center items-center"
+              >
+                <div class="w-12 mb-4 sm:mb-0 sm:w-32 h-auto mr-1">
+                  <img src="../assets/spend.png" alt="" />
+                </div>
+
+                <div class="flex flex-col text-center sm:text-left">
+                  <div class="text-lg sm:text-xl font-semibold">
+                    A shopaholic’s guide to Solana
+                  </div>
+                  <div class="text-sm">
+                    Learn ways you can use Solana to spend on IRL things!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </router-link>
         </div>
 
         <div class="flex flex-col">
@@ -275,19 +222,7 @@
 
           <div class="grid grid-cols-2 gap-8">
             <div
-              class="
-                relative
-                flex flex-col
-                bg-[#1C1317]
-                hover:bg-[#1C1317]/80
-                px-6
-                py-4
-                rounded-md
-                mt-4
-                text-white
-                pb-12
-                overflow-hidden
-              "
+              class="relative flex flex-col bg-[#1C1317] hover:bg-[#1C1317]/80 px-6 py-4 rounded-md mt-4 text-white pb-12 overflow-hidden"
             >
               <router-link class="text-white" to="/defi-downtown">
                 <img
@@ -303,19 +238,7 @@
             </div>
 
             <div
-              class="
-                relative
-                flex flex-col
-                bg-[#1C1317]
-                hover:bg-[#1C1317]/80
-                px-6
-                py-4
-                rounded-md
-                mt-4
-                text-white
-                pb-12
-                overflow-hidden
-              "
+              class="relative flex flex-col bg-[#1C1317] hover:bg-[#1C1317]/80 px-6 py-4 rounded-md mt-4 text-white pb-12 overflow-hidden"
             >
               <router-link class="text-white" to="/nft-square">
                 <img
