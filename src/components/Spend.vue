@@ -18,7 +18,7 @@
         </div>
 
         <div class="sm:flex">
-          <img class="" src="../assets/SolanaStore.png" alt="" />
+          <img class="" src="../assets/solanaStore.png" alt="" />
         </div>
       </div>
 
