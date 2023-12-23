@@ -18,21 +18,7 @@
 
     <div
       v-if="!continueWithoutWallet"
-      class="
-        border border-gray-600
-        py-3
-        px-4
-        sm:ml-4
-        rounded-lg
-        text-white
-        place-center
-        text-base
-        font-semibold
-        cursor-pointer
-        hover:opacity-60
-        text-center
-        w-max
-      "
+      class="border border-gray-600 py-3 px-4 sm:ml-4 rounded-lg text-white place-center text-base font-semibold cursor-pointer hover:opacity-60 text-center w-max"
       @click="showRemainingContent"
     >
       Explore without Wallet
@@ -245,7 +231,7 @@ import {
 import { initWallet, useWallet } from "solana-wallets-vue";
 import { WalletMultiButton } from "solana-wallets-vue";
 
-const wallets = [new BackpackWalletAdapter()];
+const wallets = [new PhantomWalletAdapter(), new BackpackWalletAdapter()];
 
 initWallet({ wallets, autoConnect: true });
 
