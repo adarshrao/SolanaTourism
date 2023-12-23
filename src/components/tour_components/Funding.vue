@@ -82,7 +82,7 @@
       </div>
     </div>
 
-    <div class="border-b border-slate-500 mb-12 mt-8"></div>
+    <!-- <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
     <p>Lets get you started with a teeny bit of Sol.</p>
 
@@ -92,16 +92,16 @@
 
     <p>Faucets are websites that send you some SOL for free</p>
 
-    <!-- <div class="text-lg font-semibold mt-8 text-white">Stakely Faucet</div>
+    <div class="text-lg font-semibold mt-8 text-white">Stakely Faucet</div>
 
     <p>
       <a href="https://stakely.io/en/faucet/solana-sol">
         This Faucet by Stakely</a
       >
       makes you send a tweet in return for a tiny bit of Sol —
-    </p> -->
+    </p>
 
-    <!-- <div class="text-lg font-semibold mt-8 text-white">Sol Faucet</div> -->
+    <div class="text-lg font-semibold mt-8 text-white">Sol Faucet</div>
 
     <p>
       <a target="_blank" href="https://solfaucet.fun/">Sol Faucet</a> powered by
@@ -118,7 +118,7 @@
     <p class="pt-4">
       If it worked, congratulations on owning your bit of Sol. You can now send
       transactions on Solana!
-    </p>
+    </p> -->
 
     <div class="border-b border-slate-500 mb-12 mt-8"></div>
 
